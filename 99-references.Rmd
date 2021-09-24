@@ -1,5 +1,0 @@
-<!-- `r if (knitr::is_html_output()) '# References {-}'` -->
-
-# Resources {-}
-
-1. [The Feynman Lectures in Physics](https://www.feynmanlectures.caltech.edu/info/)

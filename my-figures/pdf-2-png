@@ -1,4 +1,0 @@
-for f in *.pdf
-do
-convert -verbose -density 300 -trim $f -quality 100 -sharpen 0x1.0  ${f%.pdf}.png
-done
