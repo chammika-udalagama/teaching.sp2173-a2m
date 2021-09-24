@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\input{preamble}
+
+\begin{document}
+\begin{myTikz}[]{1}
+	%File name: vector_simple
+	\def\ang{60}
+	\def\len{.5\w}
+	%File name: vector_simple
+	\freedraw[->,ultra thick] (0,0) -- +(\ang:\len)node[right]{$\vec{V}$};
+	\freedraw[dashed,thick] (0,0) -- +({1.5*\len*cos(\ang)},0);
+	\freedraw[thick, gray,->] (0:{.25*\len}) arc (0:\ang:{.25*\len});
+	\freedraw ({\ang*1/2}:.125*\len) node{$\theta$};
+\end{myTikz}
+\end{document}

@@ -1,0 +1,2 @@
+
+rsync -avz _book/ aws-chammika:~/public_html/sp2173/a2m

@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\input{preamble}
+
+\begin{document}
+\begin{myTikz}[]{5cm}
+	%File name: quantum-pir
+	\def\r{0.35\lw}
+	%	\useasboundingbox (-0.5\linewidth,-1.175*\r) rectangle (0.5\linewidth,0.65*\r);
+	\draw[fill=white!70!gray] (0,0) circle (1.125*\r);
+	\draw[fill=white] (0,0) circle (0.98*\r) ;
+	\draw[->,red!70!black] (1.0625*\r,0) arc (0:180:1.0625*\r);
+	\draw (-.9*\r,0)node{$x$};
+	\draw (1.125*\r,0)node[right,text width = 5em]{$x = 0$\\ $x = L$};
+\end{myTikz}
+\end{document}

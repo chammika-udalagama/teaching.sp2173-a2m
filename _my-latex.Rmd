@@ -1,0 +1,77 @@
+$$
+\require{color}
+\definecolor{xx}{rgb}{.95,.95,.95}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{darkred}{rgb}{.5,0,0}
+\definecolor{myBlue}{rgb}{0,0,.5}
+\definecolor{myRed}{rgb}{.5,0,0}
+\definecolor{myGreen}{rgb}{0,.5,0}
+\newcommand{\mathHigh}[2][xx]{\colorbox{xx}{$\displaystyle {#2}$}}
+%\newcommand{\mathHigh}[2][]{#2}
+\newcommand{\textcolor}[2]{#2}
+\newcommand{\v}[1]{\vec{#1_{}}}
+\newcommand{\mnote}[1]{\quad\quad(\text{#1})}
+\newcommand\mdescrip[1]{}
+\newcommand\unit[1]{\;#1}
+\newcommand\emph[1]{\textit{#1}}
+\newcommand\there{\therefore\quad\quad}
+%
+\def\ke{\dfrac{1}{4 \pi \epsilon_{0}}}
+\def\ke{k_{C}}
+\def\kC{\dfrac{1}{4 \pi \epsilon_0}}
+\newcommand\lr[1]{\left({#1}\right)}
+\def\l{\left}
+\def\r{\right}
+%
+%
+\newcommand{\ex}[1]{\left\langle {#1}\right\rangle}
+\newcommand\da[2]{\dfrac{d #1}{d #2}}
+\newcommand\daa[2]{\dfrac{d^2 #1}{d #2^2}}
+\newcommand\pa[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand\paa[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand\ie{\text{i.e.$\quad$}}
+%
+%
+%
+\def\br{\\[.85em]}
+%
+\def\hb{\hslash}
+$$
+$$
+\def\b{\color{myBlue}}
+\def\g{\color{myGreen}}
+\def\st{\\}
+%
+\newcommand{\tc}[1]{{\g #1_{i}}{\b #1_{j}}}
+\newcommand{\td}[1]{{\g #1_{i}^{*}}{\b #1_{j}}}
+%
+\def\h{{\color{myBrown}{\hat{H}}}}
+\renewcommand{\e}[1]{{\color{myPurple}E_{#1}}}
+%
+\newcommand{\t}[1]{c_{#1} \psi_{#1}}
+\renewcommand{\tt}[1]{c_{#1}\h \psi_{#1}}
+\newcommand{\ttt}[1]{c_{#1}\e{#1} \psi_{#1}}
+\newcommand{\tttt}[1]{\e{#1}\color{black} |c_{#1}|^{2}{\color{myGreen}\underbrace{\int|\psi_{#1}|^{2} dx}_{1}}}
+\newcommand{\ttttf}[1]{\color{black} |c_{#1}|^{2}\int{\color{myGreen}\underbrace{|\psi_{#1}|^{2} dx}_{1}}}
+%
+\newcommand{\tabcde}[2]{\e{#2} \,c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int\psi_{#1}^{*}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+\newcommand{\tabcdef}[2]{c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int \psi_{#1}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+%
+\newcommand{\abc}[1]{\e{#1}|c_{#1}|^{2}}
+\newcommand{\abcd}[1]{|c_{#1}|^{2}}
+%
+%
+\def\bra{(\t{1}+\t{2}+\t{3}\ldots\t{n})}
+\def\braa{(\tt{1}+\tt{2}+\tt{3}\ldots\tt{n})}
+\def\braaa{(\ttt{1}+\ttt{2}+\ttt{3}\ldots\ttt{n})}
+\def\brabcd{\tttt{1}+\tttt{2}+\tttt{3}\ldots\mathHigh{\tttt{n}} }
+\def\brabcde{\tabcde{1}{2}+\tabcde{2}{1}+\tabcde{3}{1}\ldots\mathHigh{\tabcde{n}{m}} }
+%
+\def\brabcdf{\ttttf{1}+\ttttf{2}+\ttttf{3}\ldots\mathHigh{\ttttf{n}} }
+\def\brabcdef{\tabcdef{1}{2}+\tabcdef{2}{1}+\tabcdef{3}{1}\ldots\mathHigh{\tabcdef{n}{m}} }
+%
+\def\ABC{\abc{1}+\abc{2}+\abc{3}\ldots\abc{n}}
+%
+\def\ABCD{\abcd{1}+\abcd{2}+\abcd{3}\ldots\abcd{n}}
+$$

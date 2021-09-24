@@ -1,0 +1,124 @@
+---
+title: "Atoms to Molecules"
+author: "Chammika Udalagama"
+date: "`r Sys.Date()`"
+#knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: yes
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: no
+    margin_references: TRUE
+bibliography: library.bib
+---
+
+# <span class="my-sub-header">QM IV: Measurements II</span> Hello Heisenberg!
+
+<br>
+```{r,fig.cap='From [xkcd](http://xkcd.com)',out.width='85%',fig.margin=F}
+knitr::include_graphics('https://imgs.xkcd.com/comics/location_sharing.png')
+```
+`r me.quote('...the electron is forced to a decision. We compel it **to assume a definite position**; previously it was, in general, neither here nor there: it had not yet made its decision for a definite position...  If by another experiment the **velocity** of the electron is being measured, this means: the electron is compelled to decide itself for some exactly defined value of the velocity; and we observe **which** value it has chosen. In such a decision the decision made in the preceding experiment concerning position is completely obliterated... [W]e ourselves produce the results of measurement.','[Pascual Jordan](https://en.wikipedia.org/wiki/Pascual_Jordan)')`
+
+`r me.quote('[A]II the opponents of the Copenhagen interpretation do agree on one point. It would, in their view, be desirable to return to the reality concept of classical physics...  They would prefer to come back to the idea of an objective real world whose smallest parts exist objectively in the same sense as stones or trees exist, independently of whether or not we observe them...  This, however, is impossible or at least not entirely possible...  It cannot be our task to formulate wishes as to how the atomic phenomena should be; our task can only be to understand them','[Werner Heisenberg](http://en.wikipedia.org/wiki/Werner_Heisenberg)')`
+
+## What we have in store
+
+<br>
+```{r video-chap-08-main, out.extra='style="border: none;"', out.width='99%', fig.cap="Is Heisenberg in the box?"}
+knitr::include_url('https://www.youtube.com/embed/1_88HDPP1wg')
+```
+
+A measurement is a **really**,  **really** big deal in QM. When you make a measurement of a property of a  system, you will observe a value. This value can be quantised or not, depending on what you are measuring. For example, for the PIB system, if you measure position, the values will not be quantised. But, if you measure energy, then the values **will** be quantised. In this chapter, we will focus on understanding what happens when you make a measurement. In the next chapter, we will use this understanding to (finally) put all the pieces together to see how QM describes nature. 
+
+## What happens after a measuremnts
+
+### Significance of a measurement
+
+The act of making the measurement changes the system drastically. Remember that **you** will observe an **eigenvalue** of the **operator** corresponding to the property you are measuring. How this happens, is by **you** forcing the system's wave function to change into the corresponding. **eigenvector**. We refer to this process as `r me.t("collapsing")` the wave function. The Copenhagen interpretation of QM uses something called an `r me.t("ensemble")` to understand and **quantify** measurements. So, lets first see what that is.
+
+## The Ensemble Interpretation
+
+```{r fig-stormTroopers, fig.cap='A larger number of identical systems. This is called an <span class="high">ensemble</span>.'}
+knitr::include_graphics('my-figures/ensemble_storm_troopers.jpg')
+```
+
+Measurements are crucial in QM. The approach of QM that we are studying (the `r me.t("Copenhagen Interpretation")`) describes a measurement by using an `r me.t("ensemble")`.  I.e. we imagine what will happen if we make **identical** measurements on a large number of **identical** systems. A whimsical example is the identical set of stormtroopers shown in figure \@ref(fig:fig-stormTroopers).  A more realistic example is a sample of a large number of hydrogen atoms excited to the $n=3$ state or a large number of identically prepared PIB systems. The crux of the argument is, despite the systems being identical, when you make a measurement on each, you will **not** (in general) **get the same value**! This is because the wave function describes the system, probabilistically!^[Now, you should begin to understand why Einstein was so unhappy with QM.]
+
+:::definition
+Measurements in QM should **always** to be understood using an ensemble.
+:::
+
+Please remember this very important idea.
+
+We also like to emphasise that **repeated measurements on the same system**,  is **not** the same as a set of **identical measurements** on an ensemble.
+
+## Operators & Expectation Values
+
+```{r, child='_my-latex.Rmd'}
+
+```
+In a previous chapter (\@ref(sec-qm-operators)) we introduced operators corresponding to observables like position, momentum, kinetic energy and total energy. Operators allow us to determine the permitted wave functions (i.e. eigenfunctions) and the corresponding (quantised or not) values we can measure (i.e. eigenvalues). However, **operators do more**. They can predict the statistical parameters of quantum measurements. Specifically, QM can predict the average/mean value (e.g. $\ex{x}, \ex{p}$) of a set of measurements made on an ensemble. The QM **recipe** to get these values is simple; sandwich the operator between the wave function of the system, and integrate! 
+
+$$
+\newcommand\opEx[1]{\ex{#1} &= \int_{x=-\infty}^{x=+\infty} f^* \hat{#1} f\, dx \\[5pt]}
+$$
+$\displaystyle f$ is the wave function of the system; $\displaystyle f^*$ is its complex conjugate. This does **not have to be an eigenfunction of any of the operators**.
+
+:::definition
+\begin{align*}
+\opEx{x}
+\opEx{p}
+\opEx{T}
+\opEx{H}
+\end{align*}
+:::
+
+This average is also called the `r me.t("expectation value")`. Remember though that the expectation value does **not** indicate the value you **expect** to measure^[The value you expect to measure is the **mode**.]. 
+
+These seemingly simple relations gives us a lot of options. For example, we can figure out not the average of the measurements (x) but also their spread ($\sigma_x$). How do you ask? It's simple!
+
+We know that:
+$$
+\sigma^2_x = \ex{x^2} - \ex{x}^2
+$$
+and
+
+$$
+\ex{x^2} = \int_{x=-\infty}^{x=-\infty} f^* \hat{x}^2 f\, dx
+$$
+
+
+## Heisenberg Uncertainty Principle
+
+The Heisenberg Uncertainty Principle is not a principle but a QM theorem that can be mathematically proven. For certain observable, position and momentum, for instance, it can be shown that:
+$$
+\sigma_x \sigma_p \geq \dfrac{\hbar}{2} (\#eq:heisenberg)
+$$
+
+This is not the only Heisenberg relationship. There are other such relationships between other pairs of observables. So, the Heisenberg Uncertainty Principle is not just one but many such relationships. 
+
+Also, you often see other similar relationships such as:
+$$
+\begin{align*}
+\Delta x \,\Delta p_x &\geq h \\
+\Delta x \,\Delta p_x &\geq \frac{h}{2} \\
+\Delta x \,\Delta p_x &\geq \hbar \\
+\Delta x \,\Delta p_x &\geq \frac{\hbar}{2}
+\end{align*}
+$$
+Here $\Delta x$ and $\Delta p$ is indicative of the spread (i.e. $\sigma$).  However, \@ref(eq:heisenberg) is the most correct and satisfying it will automatically satisfy all the rest.
+
+### What does it mean?
+
+The Heisenberg Uncertainty relationships tell us that we cannot prepare a system that has exact (or well defined) values of position **and** exact (or well defined) values of momentum. If you prepare it to ensure $\sigma_x$ is small (remember the ensemble) then you will find that your $\sigma_p$ for the ensemble is large; and vice-versa.
+
+## My 3 Cents 
+
+1. A measurement collapses the system into an eigenfunction of the operator you are measuring.
+1. Measurements in QM should **always** to be understood using an ensemble.
+1. QM has a recipe to tell us the expectation value for identical measurements made on an ensemble.

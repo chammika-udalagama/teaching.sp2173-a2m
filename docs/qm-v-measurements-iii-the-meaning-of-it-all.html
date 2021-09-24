@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head><script src="https://hypothes.is/embed.js" async></script>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="11 QM V: Measurements III The Meaning of it All! | Atoms to Molecules" />
+<meta property="og:type" content="book" />
+
+
+
+
+
+<meta name="author" content="Chammika Udalagama" />
+
+<meta name="date" content="2021-09-24" />
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<meta name="description" content="11 QM V: Measurements III The Meaning of it All! | Atoms to Molecules">
+
+<title>11 QM V: Measurements III The Meaning of it All! | Atoms to Molecules</title>
+
+<script src="libs/header-attrs/header-attrs.js"></script>
+<link href="libs/tufte-css/tufte.css" rel="stylesheet" />
+<link href="libs/tufte-css/envisioned.css" rel="stylesheet" />
+<link href="libs/msmb-css/msmb.css" rel="stylesheet" />
+<script src="libs/kePrint/kePrint.js"></script>
+<link href="libs/lightable/lightable.css" rel="stylesheet" />
+
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {  background-color: #f8f8f8; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ef2929; } /* Alert */
+code span.an { color: #8f5902; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #c4a000; } /* Attribute */
+code span.bn { color: #0000cf; } /* BaseN */
+code span.cf { color: #204a87; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4e9a06; } /* Char */
+code span.cn { color: #000000; } /* Constant */
+code span.co { color: #8f5902; font-style: italic; } /* Comment */
+code span.cv { color: #8f5902; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #8f5902; font-weight: bold; font-style: italic; } /* Documentation */
+code span.dt { color: #204a87; } /* DataType */
+code span.dv { color: #0000cf; } /* DecVal */
+code span.er { color: #a40000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #0000cf; } /* Float */
+code span.fu { color: #000000; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #8f5902; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #204a87; font-weight: bold; } /* Keyword */
+code span.op { color: #ce5c00; font-weight: bold; } /* Operator */
+code span.ot { color: #8f5902; } /* Other */
+code span.pp { color: #8f5902; font-style: italic; } /* Preprocessor */
+code span.sc { color: #000000; } /* SpecialChar */
+code span.ss { color: #4e9a06; } /* SpecialString */
+code span.st { color: #4e9a06; } /* String */
+code span.va { color: #000000; } /* Variable */
+code span.vs { color: #4e9a06; } /* VerbatimString */
+code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+<link rel="stylesheet" href="css/my-msmb.css" type="text/css" />
+<script>
+function toggle_visibility(id1, id2) {
+var e = document.getElementById(id1);
+var f = document.getElementById(id2);
+
+e.style.display = ((e.style.display!='none') ? 'none' : 'block');
+
+if(f.classList.contains('fa-plus-square')) {
+    f.classList.add('fa-minus-square')
+    f.classList.remove('fa-plus-square')
+} else {
+    f.classList.add('fa-plus-square')
+    f.classList.remove('fa-minus-square')
+}
+
+}
+</script>
+<script>
+function copy_link(id) {
+  var dummy = document.createElement('input'),
+  text = window.location.href.split(/[?#]/)[0] + '#' + id;
+  document.body.appendChild(dummy);
+  dummy.value = text;
+  dummy.select();
+  document.execCommand('copy');
+  document.body.removeChild(dummy);
+  
+  var tooltip = document.getElementById(id + '-tooltip');
+  tooltip.innerHTML = 'Copied!';
+}
+
+function reset_tooltip(id) {
+  var tooltip = document.getElementById(id);
+  tooltip.innerHTML = 'Copy link';
+}
+</script>
+<link rel="stylesheet" href="css/my-css.css" type="text/css" />
+<link rel="stylesheet" href="css/my-msmb-modifications.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul class="navbar">
+<li class="msmb"><p class="title">Atoms to Molecules<p><p class="author">Chammika Udalagama</p>
+<li class="dropdown" style="float:right">
+<a href="javascript:void(0)" class="dropbtn">&#x25BE; Chapters</a>
+<div class="dropdown-content">
+<a href="index.html"><span class="toc-section-number">1</span> Our Journey from A to M</a>
+<a href="now-i-know-my-a-b-cs.html"><span class="toc-section-number">2</span> Now I know my A, B, Cs</a>
+<a href="the-meaning-of-it-all.html"><span class="toc-section-number">3</span> The Meaning of it All!</a>
+<a href="calculus-the-power-to-tame-change.html"><span class="toc-section-number">4</span> Calculus: The Power to Tame Change</a>
+<a href="electrostatics-the-way-charges-talk.html"><span class="toc-section-number">5</span> Electrostatics: The Way Charges Talk</a>
+<a href="waves-poetry-in-motion.html"><span class="toc-section-number">6</span> Waves: Poetry in Motion</a>
+<a href="qm-i-hello-my-quantum-universe.html"><span class="toc-section-number">7</span> <span class="my-sub-header">QM I: </span> Hello, My Quantum Universe!</a>
+<a href="qm-ii-dont-be-afraid-of-the-wave-function.html"><span class="toc-section-number">8</span> <span class="my-sub-header">QM II: </span> Don’t be Afraid of the Wave Function</a>
+<a href="qm-iii-measurements-i-mommy-where-do-wave-functions-come-from.html"><span class="toc-section-number">9</span> <span class="my-sub-header">QM III: Measurements I</span> Mommy, Where do wave functions come from?</a>
+<a href="qm-iv-measurements-ii-hello-heisenberg.html"><span class="toc-section-number">10</span> <span class="my-sub-header">QM IV: Measurements II</span> Hello Heisenberg!</a>
+<a id="active-page" href="qm-v-measurements-iii-the-meaning-of-it-all.html"><span class="toc-section-number">11</span> <span class="my-sub-header">QM V: Measurements III</span> The Meaning of it All!</a><ul class="toc-sections">
+<li class="toc"><a href="#what-we-have-in-store-7"> What we have in store</a></li>
+<li class="toc"><a href="#orthonormality"> Orthonormality</a></li>
+<li class="toc"><a href="#completeness"> Completeness</a></li>
+<li class="toc"><a href="#rules-of-the-game-qm-game"> Rules of the game QM Game!</a></li>
+<li class="toc"><a href="#understanding-qm-measurements-finally"> Understanding QM Measurements, finally!</a></li>
+<li class="toc"><a href="#goodbye-objective-reality"> Goodbye Objective Reality</a></li>
+<li class="toc"><a href="#sec:stern-gerlach"> Stern-Gerlach Experiment</a></li>
+<li class="toc"><a href="#ritzs-variational-principle"> Ritz’s Variational Principle</a></li>
+<li class="toc"><a href="#a-quick-tour-of-multivariate-calculus"> A Quick Tour of Multivariate Calculus</a></li>
+<li class="toc"><a href="#my-3-cents-8"> My 3 Cents</a></li>
+</ul>
+<a href="resources.html">Resources</a>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" "http://www.w3.org/TR/REC-html40/loose.dtd">
+<html><body><div id="qm-v-measurements-iii-the-meaning-of-it-all" class="section level1" number="11">
+<h1>
+<span class="header-section-number">11</span> <span class="my-sub-header">QM V: Measurements III</span> The Meaning of it All!</h1>
+<p><br></p>
+<div class="figure">
+<span style="display:block;" id="fig:unnamed-chunk-40"></span>
+<p class="caption marginnote shownote">
+Figure 11.1: Image from <a href="https://www.ias.edu/ideas/2014/ambainis-quantum-computing">IAS</a>
+</p>
+<img src="https://www.ias.edu/sites/default/files/styles/grid_feature_teaser/public/images/featured-thumbnails/ideas/dt_c120417.jpg?itok=_AqJ9MtK" alt="Image from [IAS](https://www.ias.edu/ideas/2014/ambainis-quantum-computing)" width="100%">
+</div>
+<blockquote>
+<quote> We ought then to regard the present state of the universe as the effect of its anterior state and as the cause of the one that is to follow. Given for one instant an intelligence which could comprehend all the forces by which nature is animated and the respective situation of all the beings who compose it- an intelligence sufficiently vast to submit these data to analysis - it would embrace in the same formula the movements of the greatest bodies of the universe and those of the lightest atom; for it, nothing would be uncertain and the future, as the past, would be present to its eyes. The human mind offers, in the perfection which it has been able to give to astronomy, a feeble idea of this intelligence. Its discoveries in mechanics and geometry, added to that of universal gravity, have enabled it to comprehend in the same analytical expressions the past and the future states of the world. </quote><br><footer><a href="https://en.wikipedia.org/wiki/Pierre-Simon_Laplace">Pierre Simon Laplace</a>
+</footer>
+</blockquote>
+<div id="what-we-have-in-store-7" class="section level2" number="11.1">
+<h2>
+<span class="header-section-number">11.1</span> What we have in store<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('what-we-have-in-store-7')" onmouseout="reset_tooltip('what-we-have-in-store-7-tooltip')"><span class="tooltiptext" id="what-we-have-in-store-7-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p><span class="math display">\[
+\require{color}
+\definecolor{xx}{rgb}{.95,.95,.95}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{darkred}{rgb}{.5,0,0}
+\definecolor{myBlue}{rgb}{0,0,.5}
+\definecolor{myRed}{rgb}{.5,0,0}
+\definecolor{myGreen}{rgb}{0,.5,0}
+\newcommand{\mathHigh}[2][xx]{\colorbox{xx}{$\displaystyle {#2}$}}
+%\newcommand{\mathHigh}[2][]{#2}
+\newcommand{\textcolor}[2]{#2}
+\newcommand{\v}[1]{\vec{#1_{}}}
+\newcommand{\mnote}[1]{\quad\quad(\text{#1})}
+\newcommand\mdescrip[1]{}
+\newcommand\unit[1]{\;#1}
+\newcommand\emph[1]{\textit{#1}}
+\newcommand\there{\therefore\quad\quad}
+%
+\def\ke{\dfrac{1}{4 \pi \epsilon_{0}}}
+\def\ke{k_{C}}
+\def\kC{\dfrac{1}{4 \pi \epsilon_0}}
+\newcommand\lr[1]{\left({#1}\right)}
+\def\l{\left}
+\def\r{\right}
+%
+%
+\newcommand{\ex}[1]{\left\langle {#1}\right\rangle}
+\newcommand\da[2]{\dfrac{d #1}{d #2}}
+\newcommand\daa[2]{\dfrac{d^2 #1}{d #2^2}}
+\newcommand\pa[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand\paa[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand\ie{\text{i.e.$\quad$}}
+%
+%
+%
+\def\br{\\[.85em]}
+%
+\def\hb{\hslash}
+\]</span>
+<span class="math display">\[
+\def\b{\color{myBlue}}
+\def\g{\color{myGreen}}
+\def\st{\\}
+%
+\newcommand{\tc}[1]{{\g #1_{i}}{\b #1_{j}}}
+\newcommand{\td}[1]{{\g #1_{i}^{*}}{\b #1_{j}}}
+%
+\def\h{{\color{myBrown}{\hat{H}}}}
+\renewcommand{\e}[1]{{\color{myPurple}E_{#1}}}
+%
+\newcommand{\t}[1]{c_{#1} \psi_{#1}}
+\renewcommand{\tt}[1]{c_{#1}\h \psi_{#1}}
+\newcommand{\ttt}[1]{c_{#1}\e{#1} \psi_{#1}}
+\newcommand{\tttt}[1]{\e{#1}\color{black} |c_{#1}|^{2}{\color{myGreen}\underbrace{\int|\psi_{#1}|^{2} dx}_{1}}}
+\newcommand{\ttttf}[1]{\color{black} |c_{#1}|^{2}\int{\color{myGreen}\underbrace{|\psi_{#1}|^{2} dx}_{1}}}
+%
+\newcommand{\tabcde}[2]{\e{#2} \,c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int\psi_{#1}^{*}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+\newcommand{\tabcdef}[2]{c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int \psi_{#1}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+%
+\newcommand{\abc}[1]{\e{#1}|c_{#1}|^{2}}
+\newcommand{\abcd}[1]{|c_{#1}|^{2}}
+%
+%
+\def\bra{(\t{1}+\t{2}+\t{3}\ldots\t{n})}
+\def\braa{(\tt{1}+\tt{2}+\tt{3}\ldots\tt{n})}
+\def\braaa{(\ttt{1}+\ttt{2}+\ttt{3}\ldots\ttt{n})}
+\def\brabcd{\tttt{1}+\tttt{2}+\tttt{3}\ldots\mathHigh{\tttt{n}} }
+\def\brabcde{\tabcde{1}{2}+\tabcde{2}{1}+\tabcde{3}{1}\ldots\mathHigh{\tabcde{n}{m}} }
+%
+\def\brabcdf{\ttttf{1}+\ttttf{2}+\ttttf{3}\ldots\mathHigh{\ttttf{n}} }
+\def\brabcdef{\tabcdef{1}{2}+\tabcdef{2}{1}+\tabcdef{3}{1}\ldots\mathHigh{\tabcdef{n}{m}} }
+%
+\def\ABC{\abc{1}+\abc{2}+\abc{3}\ldots\abc{n}}
+%
+\def\ABCD{\abcd{1}+\abcd{2}+\abcd{3}\ldots\abcd{n}}
+\]</span></p>
+<br><div class="figure">
+<span style="display:block;" id="fig:video-chap-09-main"></span>
+<iframe src="https://www.youtube.com/embed/QW0l2MK0kGU" width="99%" height="400px" data-external="1" style="border: none;">
+</iframe>
+<p class="caption marginnote shownote">
+Figure 11.2: The meaning of it all.
+</p>
+</div>
+<p>We are ready to conclude our short journey into the quantum realm. In this chapter, we will piece everything we learnt together into understanding how QM describes <strong>reality</strong>. It will turn out that the deterministic Universe that Laplace describes is non-existent. I will show you two features of wave functions called <span class="new-term">Orthonomality</span> and <span class="new-term">Completeness</span>. These will empower us to see the meaning of all we have discussed! You will be able to understand the Schrodinger’s Cat paradox and see what it means when QM says there is no ‘objective reality!’ We will also look at the famous (real) Stern-Gerlach experiment to convince ourselves that the (weird and abstract) QM description of the Universe is not just an intricate story, but a fact! We will end this chapter by deriving the powerful Ritz’s Variational Principle, which will be our primary tool to attack the H<span class="math inline">\(2^+\)</span> molecule.</p>
+<p>A lot is going to happen in this chapter. Don’t panic! The basic ideas of quantum mechanics are more <strong>weird</strong> than mathematically challenging.</p>
+</div>
+<div id="orthonormality" class="section level2" number="11.2">
+<h2>
+<span class="header-section-number">11.2</span> Orthonormality<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('orthonormality')" onmouseout="reset_tooltip('orthonormality-tooltip')"><span class="tooltiptext" id="orthonormality-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p><span class="math display">\[
+\require{color}
+\definecolor{xx}{rgb}{.95,.95,.95}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{darkred}{rgb}{.5,0,0}
+\definecolor{myBlue}{rgb}{0,0,.5}
+\definecolor{myRed}{rgb}{.5,0,0}
+\definecolor{myGreen}{rgb}{0,.5,0}
+\newcommand{\mathHigh}[2][xx]{\colorbox{xx}{$\displaystyle {#2}$}}
+%\newcommand{\mathHigh}[2][]{#2}
+\newcommand{\textcolor}[2]{#2}
+\newcommand{\v}[1]{\vec{#1_{}}}
+\newcommand{\mnote}[1]{\quad\quad(\text{#1})}
+\newcommand\mdescrip[1]{}
+\newcommand\unit[1]{\;#1}
+\newcommand\emph[1]{\textit{#1}}
+\newcommand\there{\therefore\quad\quad}
+%
+\def\ke{\dfrac{1}{4 \pi \epsilon_{0}}}
+\def\ke{k_{C}}
+\def\kC{\dfrac{1}{4 \pi \epsilon_0}}
+\newcommand\lr[1]{\left({#1}\right)}
+\def\l{\left}
+\def\r{\right}
+%
+%
+\newcommand{\ex}[1]{\left\langle {#1}\right\rangle}
+\newcommand\da[2]{\dfrac{d #1}{d #2}}
+\newcommand\daa[2]{\dfrac{d^2 #1}{d #2^2}}
+\newcommand\pa[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand\paa[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand\ie{\text{i.e.$\quad$}}
+%
+%
+%
+\def\br{\\[.85em]}
+%
+\def\hb{\hslash}
+\]</span>
+<span class="math display">\[
+\def\b{\color{myBlue}}
+\def\g{\color{myGreen}}
+\def\st{\\}
+%
+\newcommand{\tc}[1]{{\g #1_{i}}{\b #1_{j}}}
+\newcommand{\td}[1]{{\g #1_{i}^{*}}{\b #1_{j}}}
+%
+\def\h{{\color{myBrown}{\hat{H}}}}
+\renewcommand{\e}[1]{{\color{myPurple}E_{#1}}}
+%
+\newcommand{\t}[1]{c_{#1} \psi_{#1}}
+\renewcommand{\tt}[1]{c_{#1}\h \psi_{#1}}
+\newcommand{\ttt}[1]{c_{#1}\e{#1} \psi_{#1}}
+\newcommand{\tttt}[1]{\e{#1}\color{black} |c_{#1}|^{2}{\color{myGreen}\underbrace{\int|\psi_{#1}|^{2} dx}_{1}}}
+\newcommand{\ttttf}[1]{\color{black} |c_{#1}|^{2}\int{\color{myGreen}\underbrace{|\psi_{#1}|^{2} dx}_{1}}}
+%
+\newcommand{\tabcde}[2]{\e{#2} \,c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int\psi_{#1}^{*}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+\newcommand{\tabcdef}[2]{c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int \psi_{#1}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+%
+\newcommand{\abc}[1]{\e{#1}|c_{#1}|^{2}}
+\newcommand{\abcd}[1]{|c_{#1}|^{2}}
+%
+%
+\def\bra{(\t{1}+\t{2}+\t{3}\ldots\t{n})}
+\def\braa{(\tt{1}+\tt{2}+\tt{3}\ldots\tt{n})}
+\def\braaa{(\ttt{1}+\ttt{2}+\ttt{3}\ldots\ttt{n})}
+\def\brabcd{\tttt{1}+\tttt{2}+\tttt{3}\ldots\mathHigh{\tttt{n}} }
+\def\brabcde{\tabcde{1}{2}+\tabcde{2}{1}+\tabcde{3}{1}\ldots\mathHigh{\tabcde{n}{m}} }
+%
+\def\brabcdf{\ttttf{1}+\ttttf{2}+\ttttf{3}\ldots\mathHigh{\ttttf{n}} }
+\def\brabcdef{\tabcdef{1}{2}+\tabcdef{2}{1}+\tabcdef{3}{1}\ldots\mathHigh{\tabcdef{n}{m}} }
+%
+\def\ABC{\abc{1}+\abc{2}+\abc{3}\ldots\abc{n}}
+%
+\def\ABCD{\abcd{1}+\abcd{2}+\abcd{3}\ldots\abcd{n}}
+\]</span></p>
+<p>Let’s look at an important property of wave functions called <span class="new-term">Orthonomality</span>. The idea behind this is quite simple. You already know it because you use the <span class="math inline">\(xyz\)</span> Cartesian coordinate system!</p>
+<p>When you specify a coordinate <span class="math inline">\((x,y,z)\)</span> you <strong>understand</strong> that <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> are unique and <strong>not related</strong> (independent). <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> describe entirely different ‘positions’ of the point. You cannot get the meaning of <span class="math inline">\(y\)</span> by looking at <span class="math inline">\(x\)</span> or <span class="math inline">\(z\)</span>. This happens because of the <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span>, <span class="math inline">\(z\)</span> axes being perpendicular (orthogonal) to each other.</p>
+<p>The wave functions (eigenfunctions) in QM also has a similar ‘perpendicularness’ or normality to each other. For example, for the particle-in-a-box system, this means that <span class="math inline">\(\psi_3\)</span> is perpendicular (orthogonal) to <span class="math inline">\(\psi_{10}\)</span>. Please don’t try to visualise this; it will hurt your head. Instead, let’s look at how QM defines orthonomality; it’s easier.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-21" class="definition"><strong>Definition 11.1  </strong></span>For any two integer values of <span class="math inline">\(n\)</span> and <span class="math inline">\(m\)</span>,
+<span class="math display">\[
+\def\ab{{\color{myRed}\psi}}
+\def\ab{{\psi}}
+\begin{equation}
+\int_{x=-\infty}^{x=+\infty} \ab_m^*\,\ab_n\,dx = \left\{\begin{array}{cl}
+1 &amp; m=n\\
+0 &amp; m \neq n
+\end{array}\right.
+\end{equation}
+\]</span></p>
+</div>
+<p>We call this property ‘ortho’-‘normal’ because when <span class="math inline">\(m=n\)</span>, it reduces to the familiar normalisation condition.</p>
+<div id="orthonomarlity-in-the-pib-system" class="section level3" number="11.2.1">
+<h3>
+<span class="header-section-number">11.2.1</span> Orthonomarlity in the PIB system<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('orthonomarlity-in-the-pib-system')" onmouseout="reset_tooltip('orthonomarlity-in-the-pib-system-tooltip')"><span class="tooltiptext" id="orthonomarlity-in-the-pib-system-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>Lets check if this is true for the energy wave functions of the PIB system (section @ref(sec:-qm-mommy-where-do-wave functions)) which is given by:</p>
+<p><span class="math display">\[\begin{equation}
+\psi_n(x) =\sqrt{\dfrac{2}{L}} \sin \left(\dfrac{n \pi}{L}x\right)
+\end{equation}\]</span></p>
+<p>Here goes:</p>
+<p><span class="math display">\[\begin{align*}
+\newcommand\ta[1]{\sqrt{\dfrac{2}{L}} \sin \left(\dfrac{{#1} \pi}{L}x\right)}
+\newcommand\tb[1]{\sin \left(\dfrac{{#1} \pi}{L}x\right)}
+\newcommand\myInta[1]{\int_{x=-\infty}^{x=+\infty} {#1}\,dx}
+\newcommand\myInt[1]{\int_{x=0}^{x=L} {#1}\,dx}
+%
+\myInta{\psi_{m}^*\psi_{n}} &amp;= \myInt{\psi_{m}^*\psi_{n}}\\
+&amp;= \myInt{\left[\ta{m}\right]^*\ta{n}}\\
+&amp; =\dfrac{2}{L} \myInt{\tb{m}\tb{n}}\\
+&amp;=\left.\dfrac{2}{L}\begin{cases} - \dfrac{L}{4 \pi n} \sin{\left (\dfrac{2 \pi}{L} n x \right )} + \dfrac{x}{2} &amp;  m = n \\\dfrac{L}{\pi \left(m^{2} - n^{2}\right)} \left[n \sin{\left (\dfrac{\pi x}{L} m \right )} \cos{\left (\dfrac{\pi x}{L} n \right )}- m \sin{\left (\dfrac{\pi x}{L} n \right )} \cos{\left (\dfrac{\pi x}{L} m \right )} \right] &amp; m \neq n \end{cases}\right|_{x=0}^{x=L} \\
+&amp;=\begin{cases}1 &amp; m = n\\ 0 &amp;  m \neq m\end{cases}
+\end{align*}\]</span></p>
+<p>Notice that when <span class="math inline">\(n=m\)</span> we are just dealing with the normalisation condition.</p>
+<p>Here is the SymPy code for you to try it on your own.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb1-2"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-2" aria-hidden="true" tabindex="-1"></a>init_printing()</span>
+<span id="cb1-3"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-4" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> symbols(<span class="st">'x'</span>, real <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb1-5"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-5" aria-hidden="true" tabindex="-1"></a>n, m <span class="op">=</span> symbols(<span class="st">'n m'</span>, integer <span class="op">=</span> <span class="va">True</span>, positive <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb1-6"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-6" aria-hidden="true" tabindex="-1"></a>L <span class="op">=</span> symbols(<span class="st">'L'</span>, real <span class="op">=</span> <span class="va">True</span>, positive <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb1-7"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-8" aria-hidden="true" tabindex="-1"></a>f <span class="op">=</span> <span class="kw">lambda</span> n: sin(n<span class="op">*</span>pi<span class="op">*</span>x<span class="op">/</span>L)</span>
+<span id="cb1-9"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-10" aria-hidden="true" tabindex="-1"></a>rst <span class="op">=</span> integrate(f(n)<span class="op">*</span>f(m),x)</span>
+<span id="cb1-11"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-11" aria-hidden="true" tabindex="-1"></a>rst <span class="op">=</span> simplify(rst)</span>
+<span id="cb1-12"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(latex(rst))</span></code></pre></div>
+</div>
+</div>
+<div id="completeness" class="section level2" number="11.3">
+<h2>
+<span class="header-section-number">11.3</span> Completeness<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('completeness')" onmouseout="reset_tooltip('completeness-tooltip')"><span class="tooltiptext" id="completeness-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Completeness is a super cool property of the QM wave functions. To try to understand what completeness means, think, again, about the <span class="math inline">\((x,y,z)\)</span> coordinates. The quantities <span class="math inline">\(x\)</span>, <span class="math inline">\(y\)</span> and <span class="math inline">\(z\)</span> are <strong>enough</strong> to describe <strong>all</strong> points. So, we can say they are <strong>complete</strong>.</p>
+<p>QM wave functions are also, complete in that they can <strong>together</strong> ‘recreate’ <strong>any</strong> other (finite) function that satisfies the boundary conditions.</p>
+<p>Again, it is easier to think of this mathematically.</p>
+<div class="definition">
+<div class="eqn-mouseover"><div class="eqn-mouseover"><p><span id="def:unlabeled-div-22" class="definition"><strong>Definition 11.2  </strong></span>Completeness means, for any finte function <span class="math inline">\(f(x)\)</span> that satisfies the boundary conditions:
+<div class="tooltip-eqn"><button class="internal-link-eqn" onclick="copy_link('eq:qm-complete')" onmouseout="reset_tooltip('eq:qm-complete-tooltip')"><span class="tooltiptext" id="eq:qm-complete-tooltip">Copy link</span><i class="fa fa-link"></i></button></div><span class="math display" id="eq:qm-complete">\[
+\def\ab{{\color{myRed}\psi}}
+f(x) = c_1\,\ab_1 + c_2\,\ab_2 + c_3\,\ab_3+\ldots =\sum_{n=0}^{n=\infty} c_n\,\ab_n \tag{11.1}
+\]</span>
+The various values of <span class="math inline">\(c\)</span> (i.e. <span class="math inline">\(c_1,c_2,c_3,\ldots\)</span>) that allows <span class="math inline">\(f(x)\)</span> to be recreated like this can be found by:
+<div class="tooltip-eqn"><button class="internal-link-eqn" onclick="copy_link('eq:qm-complete-cs')" onmouseout="reset_tooltip('eq:qm-complete-cs-tooltip')"><span class="tooltiptext" id="eq:qm-complete-cs-tooltip">Copy link</span><i class="fa fa-link"></i></button></div><span class="math display" id="eq:qm-complete-cs">\[
+c_m = \int  \ab_m^*\,f(x)\,dx \tag{11.2}
+\]</span></p></div></div>
+</div>
+<div id="the-equation-for-c_n" class="section level3" number="11.3.1">
+<h3>
+<span class="header-section-number">11.3.1</span> The Equation for <span class="math inline">\(c_n\)</span>
+<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('the-equation-for-c_n')" onmouseout="reset_tooltip('the-equation-for-c_n-tooltip')"><span class="tooltiptext" id="the-equation-for-c_n-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>Let me quickly show you where equation <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#eq:qm-complete-cs">(11.2)</a> comes from.</p>
+<p>We start with the statement <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#eq:qm-complete">(11.1)</a> of completeness. Lets say we are interested in finding <span class="math inline">\(c_2\)</span>. Here is how we can do this; we multiply by <span class="math inline">\(\psi_2^*\)</span> and then integrate so that orthonomality kills of all the terms except the one with <span class="math inline">\(c_2\)</span>!</p>
+<p><span class="math display">\[
+\newcommand\ab[1]{{\color{myRed}\psi_{#1}}}
+\def{\color{myGreen} x^{2} (L-x)^{2}}{\psi^*_2}
+\begin{align*}
+f(x) &amp;= c_1\,\ab{1} + c_2\,\ab{2} + c_3\,\ab{3}+\ldots \\[1em]
+\renewcommand\ab[1]{{\color{myGreen} x^{2} (L-x)^{2}}\,{\color{myRed}\psi_{#1}}}
+\Rightarrow {\color{myGreen} x^{2} (L-x)^{2}}f(x) &amp;= c_1\,\ab{1} + c_2\,\ab{2} + c_3\,\ab{3}+\ldots  \\[1em]
+\renewcommand\ab[1]{\int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}\,{\color{myRed}\psi_{#1}}\,dx}
+\Rightarrow\int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}f(x)dx &amp;= c_1\,\ab{1} + c_2\,\ab{2} + c_3\,\ab{3}+\ldots \\[1em]
+\renewcommand\ab[1]{\underbrace{\int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}\,{\color{myRed}\psi_{#1}}\,dx}_{0}}
+\renewcommand\ac[1]{\underbrace{\int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}\,{\color{myRed}\psi_{#1}}\,dx}_1}
+\text{i.e}\quad\int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}f(x)dx &amp;= c_1\,\ab{1} + c_2\,\ac{2} + c_3\,\ab{3}+\ldots \\[1em]
+\therefore \quad c_2 &amp;= \int_{-\infty}^{+\infty}{\color{myGreen} x^{2} (L-x)^{2}}f(x)dx
+\end{align*}
+\]</span></p>
+</div>
+<div id="completeness-in-the-pib-system" class="section level3" number="11.3.2">
+<h3>
+<span class="header-section-number">11.3.2</span> Completeness in the PIB system<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('completeness-in-the-pib-system')" onmouseout="reset_tooltip('completeness-in-the-pib-system-tooltip')"><span class="tooltiptext" id="completeness-in-the-pib-system-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>
+<span class="marginnote shownote">
+<!--
+<div class="figure">--><span style="display:block;" id="fig:fig-qm-5-square"></span>
+<img src="my-figures/a2m_python_square.png" alt="Let's understand completeness by using this function in the PIB system." width="100%"><!--
+<p class="caption marginnote">-->Figure 11.3: Let’s understand completeness by using this function in the PIB system.<!--</p>-->
+<!--</div>--></span>
+</p>
+<p>Let me demonstrate that completeness is true with an example in the PIB system. For this lets take <span class="math inline">\(f(x)\)</span> to be the function shown in figure <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#fig:fig-qm-5-square">11.3</a> and described mathematically as:</p>
+<p><span class="math display">\[
+f(x) = \left\{\begin{array}{cl}
+0 &amp; x \lt \dfrac{1}{4}L\\
+1 &amp; \dfrac{1}{4}L \leq x \leq \dfrac{3}{4}L\\
+0 &amp; x \gt \dfrac{3}{4}L\\
+\end{array}\right.
+\]</span></p>
+<p>Lets calculate the values of <span class="math inline">\(c_n\)</span> so that:</p>
+<p><span class="math display">\[
+\newcommand\ab[1]{{\color{myRed}\psi_{#1}}}
+f(x) = c_1\,\ab{1} + c_2\,\ab{2} + c_3\,\ab{3}+\ldots \\
+\]</span>
+with:</p>
+<p><span class="math display">\[
+\psi_n(x) =\sqrt{\dfrac{2}{L}} \sin \left(\dfrac{n \pi}{L}x\right)
+\]</span></p>
+<p>Using equation <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#eq:qm-complete-cs">(11.2)</a>,</p>
+<span class="math display">\[
+\begin{align*}
+c_n &amp;= \int_{-\infty}^{-\infty}\psi_n^*f(x)dx \\[1em]
+&amp;= \int_{0}^{L}\psi_n^*f(x)dx \\[1em]
+&amp;= \int_{0}^{L/4}\psi_n^*f(x)dx + \int_{L/4}^{3/4L}\psi_n^*f(x)dx + \int_{3/4L}^{L}\psi_n^*f(x)dx \\[1em]
+&amp;= 0 + \int_{L/4}^{3L/4}\psi_n^*\times 1 \,dx + 0 \\[1em]
+&amp;= \sqrt{\dfrac{2}{L}} \int_{L/4}^{3/4L}\sin \left(\dfrac{n \pi x}{L}\right)\;dx \\[1em]
+&amp;= -\sqrt{\dfrac{2}{L}} \times \dfrac{L}{n \pi} \left.\cos \left(\dfrac{n \pi x}{L}\right)\right|_{L/4}^{3/4L}\\[1em]
+c_n&amp;= \dfrac{\sqrt{2L}}{n \pi}\left[ \cos\left(\dfrac{n \pi}{4}\right)-\cos\left(\dfrac{3 n \pi}{4}\right) \right]
+\end{align*}
+\]</span>
+<p>
+<span class="marginnote shownote">
+<!--
+<div class="figure">--><span style="display:block;" id="fig:fig-qm-5-sum"></span>
+<img src="my-figures/a2m_python_complete.png" alt="The effect of adding more and more terms" width="100%"><!--
+<p class="caption marginnote">-->Figure 11.4: The effect of adding more and more terms<!--</p>-->
+<!--</div>--></span>
+</p>
+<p>Let’s take <span class="math inline">\(L=1\)</span> and calculate a few of these values using Python:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb2-2"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> n <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">21</span>):</span>
+<span id="cb2-3"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  v <span class="op">=</span> n<span class="op">*</span>np.pi<span class="op">/</span><span class="dv">4</span></span>
+<span id="cb2-4"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-4" aria-hidden="true" tabindex="-1"></a>  c <span class="op">=</span> np.cos(v)<span class="op">-</span>np.cos(<span class="dv">3</span><span class="op">*</span>v)</span>
+<span id="cb2-5"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-5" aria-hidden="true" tabindex="-1"></a>  c <span class="op">*=</span> np.sqrt(<span class="dv">2</span>)<span class="op">/</span>(n<span class="op">*</span>np.pi)</span>
+<span id="cb2-6"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="bu">print</span>(<span class="ss">f'n = </span><span class="sc">{n}</span><span class="ch">\t</span><span class="ss">---&gt;</span><span class="ch">\t</span><span class="sc">{c:10.4}</span><span class="ss">'</span>)</span></code></pre></div>
+<pre><code>## n = 1    ---&gt;        0.6366
+## n = 2    ---&gt;     5.513e-17
+## n = 3    ---&gt;       -0.2122
+## n = 4    ---&gt;           0.0
+## n = 5    ---&gt;       -0.1273
+## n = 6    ---&gt;    -5.513e-17
+## n = 7    ---&gt;       0.09095
+## n = 8    ---&gt;           0.0
+## n = 9    ---&gt;       0.07074
+## n = 10   ---&gt;     1.351e-16
+## n = 11   ---&gt;      -0.05787
+## n = 12   ---&gt;           0.0
+## n = 13   ---&gt;      -0.04897
+## n = 14   ---&gt;     1.989e-18
+## n = 15   ---&gt;       0.04244
+## n = 16   ---&gt;           0.0
+## n = 17   ---&gt;       0.03745
+## n = 18   ---&gt;     9.955e-17
+## n = 19   ---&gt;      -0.03351
+## n = 20   ---&gt;           0.0</code></pre>
+<p>Notice, for this function <span class="math inline">\(f(x)\)</span>, all the even <span class="math inline">\(c_n\)</span>’s are practically zero.</p>
+<p>Let’s use these values of <span class="math inline">\(c_n\)</span> to see if the completeness claim is valid. This is shown in figure <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#fig:fig-qm-5-sum">11.4</a>. The more terms of the equation <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#eq:qm-complete">(11.1)</a> we add, the more perfectly we get to the square function. Figure <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#fig:fig-qm-5-components">11.5</a> shows the five terms along with their sum.</p>
+<p>This will work for <strong>any</strong> finite function you can think of! Orthonormality and Completeness are true for the wave functions of all (e.g. hydrogen atom) systems.</p>
+<div class="figure">
+<span style="display:block;" id="fig:fig-qm-5-components"></span>
+<p class="caption marginnote shownote">
+Figure 11.5: The components that go into creating the sum for fives terms
+</p>
+<img src="my-figures/a2m_python_complete_one-term.png" alt="The components that go into creating the sum for fives terms" width="750">
+</div>
+</div>
+</div>
+<div id="rules-of-the-game-qm-game" class="section level2" number="11.4">
+<h2>
+<span class="header-section-number">11.4</span> Rules of the game QM Game!<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('rules-of-the-game-qm-game')" onmouseout="reset_tooltip('rules-of-the-game-qm-game-tooltip')"><span class="tooltiptext" id="rules-of-the-game-qm-game-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p><span class="math display">\[
+\require{color}
+\definecolor{xx}{rgb}{.95,.95,.95}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{myBrown}{RGB}{205,102,0}
+\definecolor{darkred}{rgb}{.5,0,0}
+\definecolor{myBlue}{rgb}{0,0,.5}
+\definecolor{myRed}{rgb}{.5,0,0}
+\definecolor{myGreen}{rgb}{0,.5,0}
+\newcommand{\mathHigh}[2][xx]{\colorbox{xx}{$\displaystyle {#2}$}}
+%\newcommand{\mathHigh}[2][]{#2}
+\newcommand{\textcolor}[2]{#2}
+\newcommand{\v}[1]{\vec{#1_{}}}
+\newcommand{\mnote}[1]{\quad\quad(\text{#1})}
+\newcommand\mdescrip[1]{}
+\newcommand\unit[1]{\;#1}
+\newcommand\emph[1]{\textit{#1}}
+\newcommand\there{\therefore\quad\quad}
+%
+\def\ke{\dfrac{1}{4 \pi \epsilon_{0}}}
+\def\ke{k_{C}}
+\def\kC{\dfrac{1}{4 \pi \epsilon_0}}
+\newcommand\lr[1]{\left({#1}\right)}
+\def\l{\left}
+\def\r{\right}
+%
+%
+\newcommand{\ex}[1]{\left\langle {#1}\right\rangle}
+\newcommand\da[2]{\dfrac{d #1}{d #2}}
+\newcommand\daa[2]{\dfrac{d^2 #1}{d #2^2}}
+\newcommand\pa[2]{\dfrac{\partial #1}{\partial #2}}
+\newcommand\paa[2]{\dfrac{\partial^2 #1}{\partial #2^2}}
+\newcommand\ie{\text{i.e.$\quad$}}
+%
+%
+%
+\def\br{\\[.85em]}
+%
+\def\hb{\hslash}
+\]</span>
+<span class="math display">\[
+\def\b{\color{myBlue}}
+\def\g{\color{myGreen}}
+\def\st{\\}
+%
+\newcommand{\tc}[1]{{\g #1_{i}}{\b #1_{j}}}
+\newcommand{\td}[1]{{\g #1_{i}^{*}}{\b #1_{j}}}
+%
+\def\h{{\color{myBrown}{\hat{H}}}}
+\renewcommand{\e}[1]{{\color{myPurple}E_{#1}}}
+%
+\newcommand{\t}[1]{c_{#1} \psi_{#1}}
+\renewcommand{\tt}[1]{c_{#1}\h \psi_{#1}}
+\newcommand{\ttt}[1]{c_{#1}\e{#1} \psi_{#1}}
+\newcommand{\tttt}[1]{\e{#1}\color{black} |c_{#1}|^{2}{\color{myGreen}\underbrace{\int|\psi_{#1}|^{2} dx}_{1}}}
+\newcommand{\ttttf}[1]{\color{black} |c_{#1}|^{2}\int{\color{myGreen}\underbrace{|\psi_{#1}|^{2} dx}_{1}}}
+%
+\newcommand{\tabcde}[2]{\e{#2} \,c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int\psi_{#1}^{*}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+\newcommand{\tabcdef}[2]{c_{#1}^{*} {\color{myBlue}c_{#2}}{\color{myRed}\underbrace{\int \psi_{#1}{\color{myBlue}\psi_{#2}}dx}_{0}}}
+%
+\newcommand{\abc}[1]{\e{#1}|c_{#1}|^{2}}
+\newcommand{\abcd}[1]{|c_{#1}|^{2}}
+%
+%
+\def\bra{(\t{1}+\t{2}+\t{3}\ldots\t{n})}
+\def\braa{(\tt{1}+\tt{2}+\tt{3}\ldots\tt{n})}
+\def\braaa{(\ttt{1}+\ttt{2}+\ttt{3}\ldots\ttt{n})}
+\def\brabcd{\tttt{1}+\tttt{2}+\tttt{3}\ldots\mathHigh{\tttt{n}} }
+\def\brabcde{\tabcde{1}{2}+\tabcde{2}{1}+\tabcde{3}{1}\ldots\mathHigh{\tabcde{n}{m}} }
+%
+\def\brabcdf{\ttttf{1}+\ttttf{2}+\ttttf{3}\ldots\mathHigh{\ttttf{n}} }
+\def\brabcdef{\tabcdef{1}{2}+\tabcdef{2}{1}+\tabcdef{3}{1}\ldots\mathHigh{\tabcdef{n}{m}} }
+%
+\def\ABC{\abc{1}+\abc{2}+\abc{3}\ldots\abc{n}}
+%
+\def\ABCD{\abcd{1}+\abcd{2}+\abcd{3}\ldots\abcd{n}}
+\]</span></p>
+<p>Before proceeding, let me summarise all the important ideas we have discussed so far. I am going to write these down as the ‘Rules of QM.’ Please use all the experience you have gained so far to ensure that you <strong>understand</strong> the rules in the context of measurements. I.e. ask yourself how the rule is related to measurements (because this is something more familiar and tangible). Ask what does the rule enable us to do (e.g. predict <span class="math inline">\(\ex{x}\)</span>)?</p>
+<div id="a-summary-of-the-rules" class="section level3" number="11.4.1">
+<h3>
+<span class="header-section-number">11.4.1</span> A Summary of the Rules<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('a-summary-of-the-rules')" onmouseout="reset_tooltip('a-summary-of-the-rules-tooltip')"><span class="tooltiptext" id="a-summary-of-the-rules-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<div class="definition">
+<div id="rule-1" class="section level4 unnumbered">
+<h4>
+<span id="def:unlabeled-div-23" class="definition"><strong>Definition 11.3  </strong></span>Rule 1</h4>
+<p><strong>Every</strong> system has a wave function (<span class="math inline">\(\Psi\)</span>).<br>The square of the wave function (<span class="math inline">\(|\Psi|^2\)</span>) is the probability density.</p>
+</div>
+<div id="rule-2" class="section level4 unnumbered">
+<h4>Rule 2</h4>
+<p>The predictive tools of quantum mechanics should <strong>always</strong> to be understood using probability and an <strong>ensemble</strong>.</p>
+</div>
+<div id="rule-3" class="section level4 unnumbered">
+<h4>Rule 3</h4>
+<p>QM says that measurement of <strong>certain</strong> properties (e.g. energy, momentum) will give only <strong>discrete</strong> (i.e. quantised) values.</p>
+<p>We can find the of possible, quantised values (e.g.<span class="math inline">\(E_n\)</span>, <span class="math inline">\(p\)</span>) by solving the appropriate <strong>eigenvalue</strong> equations.</p>
+</div>
+<div id="rule-4" class="section level4 unnumbered">
+<h4>Rule 4</h4>
+<p>A measurement is an <strong>important, significant event</strong>.<br> A measurement <strong>changes the wave function</strong> of the system <strong>into the eigenfunction corresponding to the eigenvalue</strong> that was just measured.</p>
+</div>
+<div id="rule-5" class="section level4 unnumbered">
+<h4>Rule 5</h4>
+<p>The wave functions (eigenfunctions of operators) of QM are orthonormal and complete.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="understanding-qm-measurements-finally" class="section level2" number="11.5">
+<h2>
+<span class="header-section-number">11.5</span> Understanding QM Measurements, finally!<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('understanding-qm-measurements-finally')" onmouseout="reset_tooltip('understanding-qm-measurements-finally-tooltip')"><span class="tooltiptext" id="understanding-qm-measurements-finally-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>With the ideas we have developed so far, we can finally discuss what happens when we make a measurement. We can also provide a probability of what <strong>will</strong> happen!</p>
+<p>This is best done with a simple example. So, let’s go back to a PIB system in a state given by the wave function <span class="math inline">\(f(x) = \sqrt{\dfrac{30}{L^5}}\, x (L-x)\)</span>. Let’s say we are going to make an energy measurement of this system. We already know how to predict <span class="math inline">\(\ex{E}\)</span> using our idea of an ensemble. But, can QM tell us more specific information like the probability of measuring <span class="math inline">\(E_3\)</span>? Yes! Yes, it can.</p>
+<p>We now know that the energy wave functions <span class="math inline">\(\psi_n(x) =\sqrt{\dfrac{2}{L}} \sin \left(\dfrac{n \pi}{L}x\right)\)</span> are complete. We also know the values <span class="math inline">\(c_n\)</span> to write:</p>
+<p><span class="math display">\[
+f(x) =  \sqrt{\dfrac{30}{L^5}}\, x (L-x) = c_1 \psi_1 + c_2 \psi_2 + c_3 \psi_3\ldots
+\]</span></p>
+<p>Does the RHS remind you of something from waves? What does this <strong>mean</strong>? Here is the origin of the idea of <span class="new-term">superposition</span> in QM. The above equation says that <span class="math inline">\(f(x)\)</span> is made up by superposing many (pure) energy states corresponding to <span class="math inline">\(n=1,2,3,..\)</span> . So, <span class="math inline">\(f(x)\)</span> has <strong>no fixed energy</strong>. Therefore, when you make an (ensemble) measurement, you will get different values of energy!</p>
+<p>In addition, we know that the values of <span class="math inline">\(c_n\)</span> are not equal. I.e <span class="math inline">\(c_1 \neq c_2 \neq c_3\ldots\)</span>. This means not every <span class="math inline">\(\psi_n\)</span> contribute equally to the sum that makes up <span class="math inline">\(f(x)\)</span>. Why is this important you ask? Let’s see by calculating <span class="math inline">\(\ex{E}\)</span><label for="tufte-sn-81" class="margin-toggle sidenote-number">81</label><input type="checkbox" id="tufte-sn-81" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">81</span> Although it looks intimidating, the steps are very straightforward. Please take it one, line at a time.</span>.</p>
+<p><span class="math display">\[
+\def\XA{\left(\begin{array}{c}
+\displaystyle \brabcd \\
+\displaystyle + \\
+\displaystyle \brabcde
+\end{array}\right)}
+\begin{align*}
+\ex{E} &amp;=\int f^{*}\h{\b f} \,dx \\
+       &amp;=\int \bra^{*}\h{\color{myBlue}\bra}\,dx \\
+       &amp;=\int \bra^{*}{\color{myBlue}\braa}\,dx\\
+       &amp;=\int \bra^{*}{\color{myBlue}\braaa}\,dx \\
+       &amp;= \XA\\
+ \ex{E}&amp;=\ABC
+\end{align*}
+\]</span>
+Do you see the important meaning of the last line?<br> The <span class="math inline">\(|c_n|^2\)</span> are probabilities! More specifically, if you measure the energy of a PIB system in the state <span class="math inline">\(f(x)\)</span>, <strong><span class="math inline">\(\mathbf{|c_n|^2}\)</span> is the probability of an energy measurement giving a value <span class="math inline">\(\mathbf{E_n}\)</span></strong>. Alternatively, we can say that <strong><span class="math inline">\(\mathbf{|c_n|^2}\)</span> is the probability of <span class="math inline">\(f(x)\)</span> collapsing to <span class="math inline">\(\psi_n\)</span> during a measurement</strong>!</p>
+<p>This method of seeing <span class="math inline">\(f(x)\)</span> as a superposition of eigenfunctions works for other observables (e.g. position, momentum) too. In this way, we can understand how QM sees and predicts the result of a measurement. This should become more clearer after the discussion in the next section.</p>
+<div id="schrödingers-cat" class="section level3" number="11.5.1">
+<h3>
+<span class="header-section-number">11.5.1</span> Schrödinger’s Cat<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('schrödingers-cat')" onmouseout="reset_tooltip('schrödingers-cat-tooltip')"><span class="tooltiptext" id="schrödingers-cat-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<div class="figure">
+<span style="display:block;" id="fig:video-chap-09-sheldon"></span>
+<iframe src="https://www.youtube.com/embed/pNTMYNj2Ulk" width="99%" height="400px" data-external="1" style="border: none;">
+</iframe>
+<p class="caption marginnote shownote">
+Figure 11.6: Sheldon talks about Schrödinger’s cat.
+</p>
+</div>
+<p>Before we move on, lets quickly talk a bit about the famous <a href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger%27s_cat#:~:text=Schr%C3%B6dinger's%20cat%20is%20a%20thought,Copenhagen%20interpretation%20of%20quantum%20mechanics.">Schrödinger’s cat</a> thought experiment. It is clear, that if we open the box, we will see only one of two possibilities: <span class="math inline">\(\psi_\text{Cat Dead}\)</span> or <span class="math inline">\(\psi_\text{Cat Alive}\)</span>. Before we make the measurement, this feline system is in a <strong>superposition of states</strong> which can be given by:
+<span class="math display">\[
+f = \dfrac{1}{\sqrt{2}}\psi_\text{Cat Dead}+\dfrac{1}{\sqrt{2}}\psi_\text{Cat Alive}
+\]</span></p>
+<p>This <strong>does not mean</strong> that the cat is <strong>both dead and alive</strong>. Because <span class="math inline">\((1/\sqrt{2})^2=0.5\)</span>, this only means there is a <span class="math inline">\(50-50\)</span> chance of a measurement finding the cat dead <strong>or</strong> alive. There is no point in talking about what the cat is when we do not measure it! There is no reality beyond a measurement; lets talk a bit more about this next.</p>
+</div>
+</div>
+<div id="goodbye-objective-reality" class="section level2" number="11.6">
+<h2>
+<span class="header-section-number">11.6</span> Goodbye Objective Reality<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('goodbye-objective-reality')" onmouseout="reset_tooltip('goodbye-objective-reality-tooltip')"><span class="tooltiptext" id="goodbye-objective-reality-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p><span class="math display">\[
+\newcommand\wfc[1]{\phi_\text{#1}}
+\newcommand\pc[1]{a_\text{#1}\phi_\text{#1}}
+\newcommand\pcc[1]{c_\text{#1}\phi_\text{#1}}
+%
+\newcommand\wfs[1]{\psi_{#1}}
+\newcommand\ps[1]{b_{#1}\psi_{#1}}
+\]</span></p>
+<p>Allow me to use a made-up scenario to explain the subtle and weird ideas of this section.</p>
+<p>Imagine there is an object that has two measurable properties (observables) called <strong>shape</strong> and <strong>colour</strong>. Each property has three eigenfunctions/eigenvalues, as shown in the tables below. Remember that all these eigenfunctions are orthonormal and complete.</p>
+<div style="width:50%;">
+<p><strong>Shape</strong></p>
+<table>
+<thead><tr class="header">
+<th align="center">Eigenfunction</th>
+<th align="center">Eigenvalue</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\psi_\triangle\)</span></td>
+<td align="center"><span class="math inline">\(\triangle\)</span></td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\psi_\circ\)</span></td>
+<td align="center"><span class="math inline">\(\circ\)</span></td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\psi_\square\)</span></td>
+<td align="center"><span class="math inline">\(\square\)</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div style="width:50%;">
+<p><strong>Colour</strong></p>
+<table>
+<thead><tr class="header">
+<th align="center">Eigenfunction</th>
+<th align="center">Eigenvalue</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\phi_\text{ red}\)</span></td>
+<td align="center">red</td>
+</tr>
+<tr class="even">
+<td align="center"><span class="math inline">\(\phi_\text{ green}\)</span></td>
+<td align="center">green</td>
+</tr>
+<tr class="odd">
+<td align="center"><span class="math inline">\(\phi_\text{ blue}\)</span></td>
+<td align="center">blue</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><br></p>
+<p>You are given <strong>one</strong> (not an ensemble) of these objects in some state<span class="math inline">\(f\)</span> and asked to conduct the following measurements one after the other on the <strong>same</strong> object.</p>
+<ol style="list-style-type: decimal">
+<li>Measure colour.</li>
+<li>Measure shape.</li>
+<li>Measure colour (again).</li>
+</ol>
+<p>If you got red for the 1st measurement, and <span class="math inline">\(\circ\)</span> for the second measurement, what colour will you get for the 3rd measurement?<br>
+The answer is <strong>not necessarily</strong> red!</p>
+<p>Let us try to understand this. In the following, <span class="math inline">\(a, b, c\)</span> are constants like the <span class="math inline">\(c_n\)</span> from the previous section.</p>
+<table>
+<colgroup>
+<col width="2%">
+<col width="10%">
+<col width="16%">
+<col width="37%">
+<col width="15%">
+<col width="17%">
+</colgroup>
+<thead><tr class="header">
+<th>#</th>
+<th align="center">Measurement of</th>
+<th align="center">State before measurement</th>
+<th align="left">How the state is seen for the <u>next</u> measurement</th>
+<th align="center">State after measurement</th>
+<th align="center">Probability of this result</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td>1st</td>
+<td align="center">colour</td>
+<td align="center"><span class="math inline">\(f\)</span></td>
+<td align="left"><span class="math inline">\(f = \pc{red} + \pc{green}+ \pc{blue}\)</span></td>
+<td align="center"><span class="math inline">\(\wfc{red}\)</span></td>
+<td align="center"><span class="math inline">\(|a_\text{red}|^2\)</span></td>
+</tr>
+<tr class="even">
+<td>2nd</td>
+<td align="center">shape</td>
+<td align="center"><span class="math inline">\(\wfc{red}\)</span></td>
+<td align="left"><span class="math inline">\(\wfc{red} = \ps{\triangle} + \ps{\circ}+ \ps{\square}\)</span></td>
+<td align="center"><span class="math inline">\(\wfs{\triangle}\)</span></td>
+<td align="center"><span class="math inline">\(|b_\circ|^2\)</span></td>
+</tr>
+<tr class="odd">
+<td>3rd</td>
+<td align="center">colour</td>
+<td align="center"><span class="math inline">\(\wfs{\triangle}\)</span></td>
+<td align="left"><span class="math inline">\(\wfs{\triangle} = \pcc{red} + \pcc{green}+ \pcc{blue}\)</span></td>
+<td align="center">?</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>Let us try to understand this. (In the following, <span class="math inline">\(a, b, c\)</span> are constants like the <span class="math inline">\(c_n\)</span> from the previous section). The reason you do not <strong>always</strong> get red in the 3rd measurement is that the 2nd measurement collapses the system into an eigenfunction of shape. This shape eigenfunction can only be ‘recreated’ with a superposition of colour states. So, if you do this experiment over, and over the colour of the third measurement will keep on changing.</p>
+<p>So, what <strong>is</strong> the shape and colour of the object? Can we say it is a red circle? No! If it were, then the 3rd measurement should always give red; which it doesn’t! So, the logical conclusion from these arguments is that there is no red circle We cannot claim there is a red circle, in existence of which we are making measurements. I.e. there is no objective reality! Instead, there is an object, and it has properties, and <strong>we give it</strong> shape or colour <strong>when we measure</strong> it! I.e. reality is subjective!</p>
+<p>Please understand that I have grossly distorted a deeper argument into something seemingly simple<label for="tufte-sn-82" class="margin-toggle sidenote-number">82</label><input type="checkbox" id="tufte-sn-82" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">82</span> and inaccurate</span>. I just wanted to give you a flavour of how QM has utterly obliterated our deterministic (Laplace like) idea of reality. There is <strong>a lot</strong> more to the story. If you like to dig deeper, you can start with <span class="citation"><label for="tufte-mn-12" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-12" class="margin-toggle">Herbert (1987)<span class="marginnote">Herbert, Nick. 1987. <em><span class="nocase">Quantum reality: beyond the new physics</span></em>. Anchor boo. Garden City, N.Y: Anchor Press.</span></span> or <span class="citation"><label for="tufte-mn-13" class="margin-toggle">⊕</label><input type="checkbox" id="tufte-mn-13" class="margin-toggle">Mermin (1985)<span class="marginnote">Mermin, N. David. 1985. <span>“<span class="nocase">Is the Moon There When Nobody Looks? Reality and the Quantum Theory</span>.”</span> <em>Phys. Today</em> 38 (4): 38–47. <a href="https://doi.org/10.1063/1.880968">https://doi.org/10.1063/1.880968</a>.</span></span>.</p>
+<p>To wrap this section up, here is another explanation about measurements from a few individuals you might know!</p>
+<div class="figure">
+<span style="display:block;" id="fig:video-chap-09-gerald"></span>
+<iframe src="https://www.youtube.com/embed/WLV8t1UElos" width="99%" height="400px" data-external="1" style="border: none;">
+</iframe>
+<p class="caption marginnote shownote">
+Figure 11.7: GEH1027 Video Project: Visualising Quantum Measurements with Simple Vectors. Thanks to Melodies, Zhi and Joon Kiat
+</p>
+</div>
+<div class="figure">
+<span style="display:block;" id="fig:unnamed-chunk-45"></span>
+<p class="caption marginnote shownote">
+Figure 11.8: From <a href="http://xkcd.com">xkcd</a>. Apologies for the profanity. But, if you think this is funny, you may have understood what we have been discussing about measurements.
+</p>
+<img src="https://imgs.xkcd.com/comics/schrodinger.jpg" alt="From [xkcd](http://xkcd.com). Apologies for the profanity. But, if you think this is funny, you may have understood what we have been discussing about measurements." width="85%">
+</div>
+</div>
+<div id="sec:stern-gerlach" class="section level2" number="11.7">
+<h2>
+<span class="header-section-number">11.7</span> Stern-Gerlach Experiment<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('sec:stern-gerlach')" onmouseout="reset_tooltip('sec:stern-gerlach-tooltip')"><span class="tooltiptext" id="sec:stern-gerlach-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>Now lets look at a real experiment that demonstrates the QM features we have discussed so far.</p>
+<p>We know that all fundamental particles have a property called spin. Spin is a form of angular momentum<label for="tufte-sn-83" class="margin-toggle sidenote-number">83</label><input type="checkbox" id="tufte-sn-83" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">83</span> Rougly, angular momentum is about going in circles, linear momentum is about moving straing</span>. The <a href="https://en.wikipedia.org/wiki/Stern%E2%80%93Gerlach_experiment">Stern–Gerlach experiment</a> was designed<label for="tufte-sn-84" class="margin-toggle sidenote-number">84</label><input type="checkbox" id="tufte-sn-84" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">84</span> More correctly the Stern–Gerlach experiment was used to demonstrate a quantum property called <span class="high">space quantisation</span>. We will discuss this in detail later when we come to the hydrogen atom</span> to measure the component<label for="tufte-sn-85" class="margin-toggle sidenote-number">85</label><input type="checkbox" id="tufte-sn-85" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">85</span> Remember angular momentum is a vector.</span> of this <strong>spin angular momentum</strong> of an atom in a certain fixed direction.</p>
+<p>It is also an excellent tool to understand the role of <strong>measurements</strong> in QM and the idea of the <span class="new-term">collapse of the wave function</span>. For the present purpose, we do not have to understand much of the details of the experiment. All we have to understand are the main features of the experiment.</p>
+<p>A large number (a beam) of electrons are sent through a (non-uniform) magnetic field. This causes the beam to split into two<label for="tufte-sn-86" class="margin-toggle sidenote-number">86</label><input type="checkbox" id="tufte-sn-86" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">86</span> This splitting is not expected classically, (seen from the video)</span>. This splitting into two beams is a demonstration of quantisation. It indicates that there are only two possible values for the property we are measuring. This split can be <strong>up and down</strong> or <strong>left and right</strong>, or any two opposites directions depending on the orientation of the magnet. Video <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#fig:vid-stern-gerlach">11.9</a> shows a video explanation.</p>
+<div class="figure">
+<span style="display:block;" id="fig:vid-stern-gerlach"></span>
+<iframe src="https://www.youtube-nocookie.com/embed/rg4Fnag4V-E" width="672" height="400px" data-external="1">
+</iframe>
+<p class="caption marginnote shownote">
+Figure 11.9: An explanation of the Stern-Gerlach experiment.
+</p>
+</div>
+<p>The following applet from PheT allows us to understand further what happens in a Stern-Gerlach experiment.</p>
+<!-- ```{r,out.width='100%',fig.align='center'} -->
+<!-- knitr::include_url('http://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html',height = '800px') -->
+<!-- ``` -->
+<iframe src="https://phet.colorado.edu/sims/stern-gerlach/stern-gerlach_en.html" width="800" height="600" scrolling="no" allowfullscreen>
+</iframe>
+<caption>
+Animation from Phet.
+</caption>
+</div>
+<div id="ritzs-variational-principle" class="section level2" number="11.8">
+<h2>
+<span class="header-section-number">11.8</span> Ritz’s Variational Principle<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('ritzs-variational-principle')" onmouseout="reset_tooltip('ritzs-variational-principle-tooltip')"><span class="tooltiptext" id="ritzs-variational-principle-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p><br></p>
+<blockquote>
+<quote> The variational principle is extraordinarily powerful, and embarrassingly easy to use. </quote><br><footer>
+David J. Griffith (Introduction to Quantum Mechanics)
+</footer>
+</blockquote>
+<p>We are now done with the theories of QM for A2M. Now, we just need to solve the H_2^+ molecule to wrap up<label for="tufte-sn-87" class="margin-toggle sidenote-number">87</label><input type="checkbox" id="tufte-sn-87" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">87</span> and also to fulfil my promise to you</span>. To do this, we need to derive an extremely powerful, but absurdly simple rule called the Variational Principle. But, first you need to understand why we need the Variational Principle in the first place.</p>
+<p>The QM recipe for solving/understanding a system sort of goes like this:</p>
+<ol style="list-style-type: decimal">
+<li>Figure out the potential energy,(V) of your system.</li>
+<li>Identify the boundary conditions that restrict your system.</li>
+<li>Write down the Hamiltonian in the form of the eigenvalue equation.
+<span class="math display">\[
+\hat{H}\psi_{n} = E_{n}\psi_{n}
+\]</span>
+</li>
+<li>Suffer (a bit or a lot) and figure out the <span class="math inline">\(\psi_{n}\)</span> and <span class="math inline">\(E_{n}\)</span>.</li>
+</ol>
+<p>Analytical solutions like that of the particle-in-a-box are rare. There are only a handful of systems (e.g. particle-in-a-box, harmonic oscillator, rigid rotator, hydrogen atom) that can be solved this way. This is because the Hamiltonian (i.e. the energy operator) is complicated in 3D and becomes progressively more complicated with each additional particle that is included. The complexity is so mathematically challenging that it is impossible to solve such equations for real atoms that contain tens of electrons. Therefore we forced to use approximate methods such as the Variational Principle. This not only allows us to solve complicated problems of QM, but it can turn some into ‘embarrassingly simple’ problems.</p>
+<div id="variational-principle-statement" class="section level3" number="11.8.1">
+<h3>
+<span class="header-section-number">11.8.1</span> Variational Principle: Statement<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('variational-principle-statement')" onmouseout="reset_tooltip('variational-principle-statement-tooltip')"><span class="tooltiptext" id="variational-principle-statement-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>Because it is (very) hard to derive the wave function of a real system; the strategy we use is to make an educated guess of the wave function. Let’s call this guess <span class="math inline">\(f\)</span>. We then try to improve and optimise this guess. But, sometimes, we can even estimate other properties (e.g. lowest energy level <span class="math inline">\(E_1\)</span>) with just such a guess.</p>
+<div class="definition">
+<p><span id="def:unlabeled-div-24" class="definition"><strong>Definition 11.4  </strong></span>The <strong>Variational Principle</strong> states that for any function <span class="math inline">\(f\)</span> (that satisfies the relevant boundary conditions)
+<span class="math display">\[
+w \geq E_{1}
+\]</span>
+Where <span class="math inline">\(E_{1}\)</span> is the ground state energy of the system and
+<span class="math display">\[
+w =  \frac{\displaystyle \int f^{*} \hat{H} f \,dx}{\displaystyle \int f^{*}f \,dx}
+\]</span></p>
+</div>
+<p>Notice the similarity between the <span class="math inline">\(w\)</span> and <span class="math inline">\(\ex{E}\)</span>. <span class="math inline">\(w\)</span> is an estimate for the `real’ <span class="math inline">\(E_{1}\)</span>.</p>
+<p>The variational principle is very easy to prove and use. Let’s first look at how it is used followed by a proof.</p>
+</div>
+<div id="using-the-variational-principle-with-the-pib-system" class="section level3" number="11.8.2">
+<h3>
+<span class="header-section-number">11.8.2</span> Using the Variational Principle with the PIB system<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('using-the-variational-principle-with-the-pib-system')" onmouseout="reset_tooltip('using-the-variational-principle-with-the-pib-system-tooltip')"><span class="tooltiptext" id="using-the-variational-principle-with-the-pib-system-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>Let me demonstrate the Variational Principle by using it with the simple PIB system. Because we already know what the answer should be, we will also get to see how the result of the Variational Principle compares with the real deal.</p>
+<p>What the Variational Principle gives us is an estimate (for the upper bound) for the first energy level of a system.</p>
+<p>Let’s first write down the Hamiltonian for the PIB system.
+<span class="math display">\[
+\hat{H} = -\frac{\hbar^{2}}{2m} \dfrac{d^2}{dx^2} + 0
+\]</span></p>
+<p>Let’s pretend we do not know the wave function. Let’s use a trial wave function that satisfies the boundary conditions such as:
+<span class="math display">\[
+\def{\color{myGreen}A x (L-x)}{{\color{myGreen}A x (L-x)}}
+f = {\color{myGreen}A x (L-x)}
+\]</span></p>
+<p>Let’s work out some mathematics first so that it is easier in the next step:
+<span class="math display">\[
+\h f=\h {\color{myGreen}A x (L-x)}= -\frac{\hbar^{2}}{2m} \dfrac{d^2}{dx^2} {\color{myGreen}A x (L-x)}= -\frac{\hbar^{2}}{2m}\daa{{\color{myGreen}A x (L-x)}}{x} = \frac{\hbar^{2}}{m}A
+\]</span></p>
+<p>Using the Variational Principle:
+<span class="math display">\[
+\begin{align}
+w&amp;=\frac{\displaystyle \int f^{*} \h {f} \,dx}{\displaystyle \int f^{*}f \,dx}
+= \frac{\displaystyle \int \left[ {\color{myGreen}A x (L-x)}\right]^{*}\left(\frac{\hbar^{2}}{m}A\right) \,dx}{\displaystyle \int \left[ {\color{myGreen}A x (L-x)}\right]^{*} [{\color{myGreen}A x (L-x)}]\,dx}
+= \frac{5 \hbar^{2}}{m L^{2}}
+= \frac{10}{\pi^{2}}\left( \frac{1^2\pi^{2} \hbar^{2}}{2 m L^{2}}\right)
+=1.01321 E_{1}
+\end{align}
+\]</span>
+Did you see that! We got a decent estimate for <span class="math inline">\(E_1\)</span> with a fraction of the work. The problem, however, is that in a real system, we wouldn’t know that we are so close to the real value.</p>
+</div>
+<div id="variational-principle-derivation" class="section level3" number="11.8.3">
+<h3>
+<span class="header-section-number">11.8.3</span> Variational Principle: Derivation<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('variational-principle-derivation')" onmouseout="reset_tooltip('variational-principle-derivation-tooltip')"><span class="tooltiptext" id="variational-principle-derivation-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p><span class="marginnote" style="color:black;">
+(2) Substituting the series in place of <span class="math inline">\(f\)</span>.<br><br>
+(6) Moving the operator <span class="math inline">\(\h\)</span> into the second parenthesis.<br><br>
+(7) Using the fact that: <span class="math inline">\(\h\psi_{n}= \e{n} \psi_{n}\)</span><br><br>
+(8) Expanding the terms with like index in the numerator &amp; denominator and usinf Orthonormality <span class="math inline">\(\Rightarrow\)</span> 1 or 0<br><br>
+(9) Substituting <span class="math inline">\(E_1\)</span> in place of all <span class="math inline">\(E_n\)</span>. Inequality is because <span class="math inline">\(\e{1}&lt; \e{2} &lt; \e{3}\ldots\)</span><br><br>
+(12) QED!
+</span></p>
+<p><span class="math inline">\(\psi_{n}\)</span> are the wave functions of <span class="math inline">\(\hat{H}\)</span>. We <strong>do not</strong> know these <span class="math inline">\(\psi_{n}\)</span>, but that does not matter!</p>
+<p><span class="math display">\[
+f = \t{1}+\t{2}+\t{3}\ldots\t{n} = \sum_{i} \t{i} \mnote{Completeness of $\psi_{n}$}\st
+\]</span></p>
+<p><span class="math display">\[
+\def\ds{\displaystyle}
+\def\XA{\left(
+\begin{array}{c}
+\ds \brabcd \\
+\ds + \\
+\ds \brabcde
+\end{array}\right)}
+\def\XB{{\left(
+\begin{array}{c}
+\ds \brabcdf \\
+\ds + \\
+\ds \brabcdef
+\end{array}\right)}}
+\begin{align}
+w&amp;=\dfrac{\ds \int f^{*} \h {\b f} \,dx}{\ds \int f^{*}f \,dx}\mnote{Start of the variational principle}\st
+w&amp;= \dfrac{\ds\int \bra^{*} \h{\color{myBlue}\bra}  \,dx}{\ds\int \bra^{*}{\color{myBlue}\bra} \,dx}\st
+w&amp;= \dfrac{\ds\int \bra^{*}{\color{myBlue}\braa}  \,dx}{\ds\int \bra^{*}{\color{myBlue}\bra} \,dx}\st
+w&amp;= \dfrac{\ds\int \bra^{*}{\color{myBlue}\braaa}  \,dx}{\ds\int \bra^{*}{\color{myBlue}\bra} \,dx}\\[0.5cm]
+{w} &amp;= \dfrac{\XA}{\XB}\st
+w&amp;=\dfrac{\ABC}{\ABCD}\\[0.5cm]
+&amp;\geq \dfrac{\e{1} |c_{1}|^{2} + \e{1}|c_{2}|^{2} + \e{1}|c_{3}|^{2} \ldots \e{1}|c_{n}|^{2}}{ |c_{1}|^{2} + |c_{2}|^{2} + |c_{3}|^{2} \ldots |c_{n}|^{2}}\\[0.5cm]
+w&amp;\geq \e{1} \left(\dfrac{|c_{1}|^{2} + |c_{2}|^{2} + |c_{3}|^{2} \ldots |c_{n}|^{2}}{ |c_{1}|^{2} + |c_{2}|^{2} + |c_{3}|^{2} \ldots |c_{n}|^{2}}\right)\st
+\ie w &amp;\geq \e{1}
+\end{align}
+\]</span></p>
+</div>
+</div>
+<div id="a-quick-tour-of-multivariate-calculus" class="section level2" number="11.9">
+<h2>
+<span class="header-section-number">11.9</span> A Quick Tour of Multivariate Calculus<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('a-quick-tour-of-multivariate-calculus')" onmouseout="reset_tooltip('a-quick-tour-of-multivariate-calculus-tooltip')"><span class="tooltiptext" id="a-quick-tour-of-multivariate-calculus-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<p>We need to quickly familiarise ourselves with multivariate calculus to handle the 3D systems. Most of the mechanical aspects can be done with SymPy. But, first you need to understand what you are doing.</p>
+<div id="partial-derivatives" class="section level3" number="11.9.1">
+<h3>
+<span class="header-section-number">11.9.1</span> Partial Derivatives<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('partial-derivatives')" onmouseout="reset_tooltip('partial-derivatives-tooltip')"><span class="tooltiptext" id="partial-derivatives-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<p>We evaluate a <strong>partial derivative</strong> with respect to a variable, by treating all other variables as constant.</p>
+<div id="example-1" class="section level4 unnumbered">
+<h4>Example 1</h4>
+<p>If <span class="math inline">\(f(x,y) = y^2 \sin x\)</span> then:
+<span class="math display">\[
+\begin{matrix}
+\pa{f}{x} = y^2 \cos x &amp; \text{and}&amp;
+\pa{f}{y} = 2y \sin x
+\end{matrix}
+\]</span></p>
+</div>
+<div id="example-2" class="section level4 unnumbered">
+<h4>Example 2</h4>
+<p>If <span class="math inline">\(f(x,y,z) = x^2+y^2+z^2\)</span> then:
+<span class="math display">\[\begin{matrix}
+\pa{f}{x} = 2x+0+0  &amp; \text{and}&amp;
+\pa{f}{y} = 0 +2y+0 &amp; \text{and}&amp;
+\pa{f}{z} = 0+0+2z
+\end{matrix}\]</span></p>
+<p>The partial derivative <span class="math inline">\(\pa{f}{x}\)</span> tells us <strong>how <span class="math inline">\(f\)</span> changes with (only) <span class="math inline">\(x\)</span></strong>, when the <strong>other variables are held constant</strong>.</p>
+</div>
+</div>
+<div id="multivariate-calculus" class="section level3" number="11.9.2">
+<h3>
+<span class="header-section-number">11.9.2</span> Multivariate calculus<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('multivariate-calculus')" onmouseout="reset_tooltip('multivariate-calculus-tooltip')"><span class="tooltiptext" id="multivariate-calculus-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h3>
+<div class="figure">
+<span style="display:block;" id="fig:video-chap-09-calculus"></span>
+<iframe src="https://www.youtube.com/embed/zwgettRKNyw" width="99%" height="400px" data-external="1" style="border: none;">
+</iframe>
+<p class="caption marginnote shownote">
+Figure 11.10: Multivariate integrations.
+</p>
+</div>
+<p>Let me demonstrate how to <strong>use</strong> calculus in multiple dimensions and different coordinates systems. You should pay particular attention to the <strong>volume element</strong> that defines the volume, area or length in the coordinate system you are using.</p>
+<div id="example-volume-of-a-cuboid-in-cartesian-coordinates." class="section level4 unnumbered">
+<h4>Example: Volume of a cuboid in Cartesian Coordinates.</h4>
+<p>Let’s start with an elementary example. Let’s evaluate the volume of a cuboid of dimensions <span class="math inline">\(L_{x}\)</span> <span class="math inline">\(L_{y}\)</span> and <span class="math inline">\(L_{z}\)</span>.</p>
+<p>Consider a point <span class="math inline">\((x,y,z)\)</span> inside this cuboid. Around this point we can imagine the tiny box of lengths <span class="math inline">\(\delta x\)</span>, <span class="math inline">\(\delta y\)</span>, <span class="math inline">\(\delta z\)</span> creating a small <strong>element of volume</strong> given by:</p>
+<p><span class="math display">\[
+\delta V  \approx \delta x\, \delta y\, \delta z
+\]</span></p>
+<p>We can then use our understanding of integration to sum in all three dimensions to write the total volume as:
+<span class="math display">\[
+\newcommand\ia[1]{\int_{{#1}=0}^{{#1}=L_{#1}}}
+V = \int dV \quad =\ia{x}\ia{y}\ia{z} dxdydz
+\]</span></p>
+<p>We can easily simplify this as:
+<span class="math display">\[
+\begin{align*}
+V   &amp;=\ia{x}\ia{y}\ia{z} dxdydz \\[1em]
+    &amp;=\ia{x}dx\,\ia{y}dy\,\ia{z} dz\\[1em]
+    &amp;= L_x L_y L_z
+\end{align*}
+\]</span></p>
+</div>
+<div id="example-area-of-a-circle" class="section level4 unnumbered">
+<h4>Example: Area of a Circle</h4>
+<p>Let’s find the area of a circle of radius <span class="math inline">\(R\)</span>, from scratch.</p>
+<p>Lets work in <span class="math inline">\((r,\theta)\)</span> <strong>polar coordinates</strong>. We can do this using Cartesian coordinates. But the maths will be more difficult. Using polar coordinates makes the solution simple and elegant.</p>
+<p>Consider a point <span class="math inline">\((r,\theta)\)</span> in the circle. If we increase <span class="math inline">\(r\)</span> by a small amount <span class="math inline">\(\delta r\)</span> and <span class="math inline">\(\theta\)</span> by a small amount <span class="math inline">\(\delta \theta\)</span> we end up drawing out a small <strong>element of area</strong> given by;
+<span class="math display">\[
+\delta A \approx r \delta \theta\, \delta r
+\]</span>
+Notice that this is <strong>not</strong> just <span class="math inline">\(\delta \theta\, \delta r\)</span> because we need the <strong>area</strong> associated with each of the increments.</p>
+<p>We can now use our understanding of integration to sum in both dimensions to write the total area as:</p>
+<p><span class="math display">\[
+\newcommand\ia[2]{\int_{{#1}=0}^{{#1}={#2}}}
+A = \int dA \quad =\ia{r}{R}\ia{\theta}{2 \pi} r d\theta dr
+\]</span></p>
+<p>We evaluate this as::
+<span class="math display">\[
+\begin{align*}
+A   &amp;=\ia{r}{R}\ia{\theta}{2 \pi} r d\theta dr \\[1em]
+    &amp;=\ia{r}{R}rdr\ia{\theta}{2 \pi} d\theta  \\[1em]
+    &amp;= \left.\dfrac{1}{2}r^2\right|_{r=0}^{r=R} \times \left.\theta\right|_{\theta=0}^{\theta=2\pi} \\[1em]
+A   &amp;= \pi R^2
+\end{align*}
+\]</span></p>
+</div>
+<div id="example-volume-of-a-sphere" class="section level4 unnumbered">
+<h4>Example: Volume of a Sphere</h4>
+<p>
+<span class="marginnote shownote">
+<!--
+<div class="figure">--><span style="display:block;" id="fig:volume-element-rtp"></span>
+<img src="http://hyperphysics.phy-astr.gsu.edu/hbase/math/immath/sphcoordel.gif" alt="The volume element associated with spherical polar coordinates" width="100%"><!--
+<p class="caption marginnote">-->Figure 11.11: The volume element associated with spherical polar coordinates<!--</p>-->
+<!--</div>--></span>
+</p>
+<p>Let’s find the volume of a sphere of radius <span class="math inline">\(R\)</span>, from scratch.</p>
+<p>Lets work in <span class="math inline">\((r,\theta, \phi)\)</span> <strong>spherical polar coordinates</strong>. Using Cartesian coordinates for this is ill advised.</p>
+<p>Consider a point <span class="math inline">\((r,\theta,\phi)\)</span> within the sphere. If we increase <span class="math inline">\(r\)</span> by a small amount <span class="math inline">\(\delta r\)</span> and <span class="math inline">\(\theta\)</span> by a small amount <span class="math inline">\(\delta \theta\)</span> and <span class="math inline">\(\phi\)</span> by a small amount <span class="math inline">\(\delta \phi\)</span> we end up drawing out a small <strong>element of volume</strong> given by;
+<span class="math display">\[
+\delta V  \approx r^2 \sin \theta\, \delta r\, \delta \theta\, \delta \phi
+\]</span></p>
+<p>We can then use our understanding of integration to sum in all three dimensions to write the total volume as:
+<span class="math display">\[
+\newcommand\ia[2]{\int_{{#1}=0}^{{#1}={#2}}}
+V = \int dV \quad =\ia{r}{R}\ia{\theta}{\pi}\ia{\phi}{2\pi} r^2 \sin \theta\, d r\, d \theta\, d \phi
+\]</span>
+Notice that this is <strong>not</strong> just <span class="math inline">\(\delta r\,\delta \theta\, \delta \phi\)</span> because we need the <strong>volume</strong> associated with each of the increments. This is a tad more complicated than the previous cases. It would help if you referred to figure <a href="qm-v-measurements-iii-the-meaning-of-it-all.html#fig:volume-element-rtp">11.11</a> to convince yourself of this.</p>
+<p>You should also take note of the limits. <span class="math inline">\(\theta\)</span> goes from <span class="math inline">\(0\)</span> to <span class="math inline">\(\pi\)</span> while <span class="math inline">\(\phi\)</span> goes all the way to <span class="math inline">\(2 \pi\)</span> so as to cover all directions <strong>once</strong>. If both go to <span class="math inline">\(2 \pi\)</span> we will be double-counting!</p>
+<p>We evaluate this as::
+<span class="math display">\[
+\newcommand\ia[2]{\int_{{#1}=0}^{{#1}={#2}}}
+\begin{align*}
+V &amp;=\ia{r}{R}\ia{\theta}{\pi}\ia{\phi}{2\pi} r^2 \sin \theta\, d r\, d \theta\, d \phi \\
+ &amp;=\ia{r}{R}r^2dr\,\ia{\theta}{\pi} \sin \theta\,\ia{\phi}{2\pi} d \phi \\
+ &amp;= \left(\dfrac{1}{3}R^3-0\right)\times [-1 \times\left(\cos \pi - \cos 0\right)]\times\left(2\pi-0\right)\\
+ &amp;=  \dfrac{4}{3}\pi R^3
+\end{align*}
+\]</span></p>
+</div>
+<div id="using-sympy" class="section level4" number="11.9.2.1">
+<h4>
+<span class="header-section-number">11.9.2.1</span> Using SymPy</h4>
+<p>Let me quickly show you how to use SymPy to do these calculations. You have to note that SymPy will add the <span class="math inline">\(dr\)</span>, <span class="math inline">\(d\theta\)</span> and <span class="math inline">\(d\phi\)</span> for you. But you need to complete the rest of the volume element.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sympy <span class="im">import</span> <span class="op">*</span></span>
+<span id="cb4-2"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-2" aria-hidden="true" tabindex="-1"></a>init_printing()</span>
+<span id="cb4-3"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-3" aria-hidden="true" tabindex="-1"></a>r, t, p <span class="op">=</span> symbols(<span class="st">'r </span><span class="ch">\\</span><span class="st">theta </span><span class="ch">\\</span><span class="st">phi'</span>)    <span class="co"># Using LaTeX symbols</span></span>
+<span id="cb4-4"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-4" aria-hidden="true" tabindex="-1"></a>R <span class="op">=</span> symbols(<span class="st">'R'</span>)</span>
+<span id="cb4-5"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Area of the circle</span></span>
+<span id="cb4-7"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-7" aria-hidden="true" tabindex="-1"></a>integrate(r,(r,<span class="dv">0</span>,R),(t,<span class="dv">0</span>,<span class="dv">2</span><span class="op">*</span>pi))</span>
+<span id="cb4-8"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Volume of the sphere</span></span></code></pre></div>
+<pre><code>##     2
+## pi*R</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="qm-v-measurements-iii-the-meaning-of-it-all.html#cb6-1" aria-hidden="true" tabindex="-1"></a>integrate(r<span class="op">**</span><span class="dv">2</span><span class="op">*</span>sin(t),(r,<span class="dv">0</span>,R),(t,<span class="dv">0</span>,pi),(p,<span class="dv">0</span>,<span class="dv">2</span><span class="op">*</span>pi))</span></code></pre></div>
+<pre><code>##       3
+## 4*pi*R 
+## -------
+##    3</code></pre>
+</div>
+<div id="wave-functions-in-higher-dimensions" class="section level4" number="11.9.2.2">
+<h4>
+<span class="header-section-number">11.9.2.2</span> Wave functions in higher dimensions</h4>
+<p><span class="math inline">\(\newcommand\btw[1]{{#1} \text{ and } {#1}+d{#1}}\)</span></p>
+<p>You should be careful to use the appropriate volume element when dealing with higher dimensional wave functions. In general the probability density must be matched with the correct volume element, <span class="math inline">\(d\tau\)</span>, as indicated below:</p>
+<table>
+<colgroup>
+<col width="9%">
+<col width="5%">
+<col width="25%">
+<col width="34%">
+<col width="25%">
+</colgroup>
+<thead><tr class="header">
+<th align="center">Coordinate system</th>
+<th align="center">Dimension</th>
+<th align="center">Volume element <br>(<span class="math inline">\(d\tau\)</span>)</th>
+<th align="center">Usage</th>
+<th align="center">Probability of finding the particle between…</th>
+</tr></thead>
+<tbody>
+<tr class="odd">
+<td align="center">Cartesian</td>
+<td align="center">1D</td>
+<td align="center"><span class="math inline">\(dx\)</span></td>
+<td align="center"><span class="math inline">\(|\psi(x)|^2\; dx\)</span></td>
+<td align="center"><span class="math inline">\(\btw{x}\)</span></td>
+</tr>
+<tr class="even">
+<td align="center">Cartesian</td>
+<td align="center">3D</td>
+<td align="center"><span class="math inline">\(dxdydz\)</span></td>
+<td align="center"><span class="math inline">\(|\psi(x,y,z)|^2\; dxdydz\)</span></td>
+<td align="center">
+<span class="math inline">\(\btw{x}\)</span>, <br><span class="math inline">\(\btw{y}\)</span>, <br><span class="math inline">\(\btw{z}\)</span>
+</td>
+</tr>
+<tr class="odd">
+<td align="center">Polar</td>
+<td align="center">2D</td>
+<td align="center"><span class="math inline">\(rd\theta\, dr\)</span></td>
+<td align="center"><span class="math inline">\(|\psi(r,\theta)|^2\; rd\theta dr\)</span></td>
+<td align="center">
+<span class="math inline">\(\btw{r}\)</span>,<br><span class="math inline">\(\btw{\theta}\)</span>
+</td>
+</tr>
+<tr class="even">
+<td align="center">Spherical Polar</td>
+<td align="center">3D</td>
+<td align="center"><span class="math inline">\(r^2\; \sin \theta\, d r\, d \theta\, d \phi\)</span></td>
+<td align="center"><span class="math inline">\(|\psi(r,\theta,\phi)|^2 r^2 \sin \theta\, d r\, d \theta\, d \phi\)</span></td>
+<td align="center">
+<span class="math inline">\(\btw{r}\)</span><br><span class="math inline">\(\btw{\theta}\)</span>,<br><span class="math inline">\(\btw{\phi}\)</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="my-3-cents-8" class="section level2" number="11.10">
+<h2>
+<span class="header-section-number">11.10</span> My 3 Cents<div class="tooltip"><button class="internal-link-btn" onclick="copy_link('my-3-cents-8')" onmouseout="reset_tooltip('my-3-cents-8-tooltip')"><span class="tooltiptext" id="my-3-cents-8-tooltip">Copy link</span><i class="fa fa-link"></i></button></div>
+</h2>
+<ol style="list-style-type: decimal">
+<li>Everything that we have discussed about QM can be neatly summarised into the five ‘Rules of QM’</li>
+<li>The idea of completeness allows us to better understand how a measurement collapses a wave function by explicitly providing a probability (i.e. <span class="math inline">\(|c_n|^2\)</span>).</li>
+<li>Most real systems are impossible to solve analytically. Instead we need to resort to approximate methods. The Variational Principle is one of these. <strong>The Variational Principle gives us an estimate of the 1st energy level by using an approximate wave function</strong>.</li>
+</ol>
+<!-- # References {-} -->
+</div>
+</div></body></html>
+
+<p style="text-align: center;">
+<a href="qm-iv-measurements-ii-hello-heisenberg.html"><button class="btn btn-default">Previous</button></a>
+<a href="resources.html"><button class="btn btn-default">Next</button></a>
+</p>
+<p class="build-date">Page built: 
+2021-09-24
+ using 
+R version 3.6.3 (2020-02-29)
+</p>
+</div>
+</div>
+
+
+
+</body>
+</html>

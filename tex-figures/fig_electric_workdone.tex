@@ -1,0 +1,31 @@
+\documentclass{standalone}
+\input{preamble}
+
+\begin{document}
+\begin{myTikz}[]{1}
+	%File name: electric_workdone
+	\draw[dashed](0,0)-- +(10,0);
+	\draw[dashed](4,0)-- +(0,-1);
+	\draw[dashed](0,0)-- +(0,-1.5);
+	\draw[dashed](7.5,0)-- +(0,-1.5);
+	\draw[dashed](7.,0)-- +(0,-1.5);
+	%
+	\draw(7.25,-0.5) node[below,fill=white]{$-\delta r$} ;
+	\draw[<-,very thick](7,-0.5)-- +(0.5,0);
+	%
+	\draw[->,very thick](0,-0.75)-- +(4,0); 
+	\draw (2.0,-0.75)node[fill=white]{$R$};
+	%
+	\draw[->,very thick](0,-1.25)-- +(7.5,0); 
+	\draw (3.75,-1.25)node[fill=white]{$r$};
+	%
+	\draw[fill=gray!10,draw=black] (0,0)circle(0.5)node{$+Q$} ;
+	\draw[fill=black,draw=none] (4,0)circle(0.05)node[above]{$P$} ;
+	%
+	\draw[ultra thick,->,draw=red!50!black, color=red](7.5,0)-- +(1,0)node[above right]{${F}_{\text{electrostatic}}$};
+	%
+	\draw[ultra thick,->,draw=green!50!black, color=green!50!black](7.5,0)-- +(-1,0)node[above left]{${F}_{\text{you}}$};
+	
+	\draw[fill=blue,draw=none] (7.5,0)circle(0.05)node[above]{$q$} ;
+\end{myTikz}
+\end{document}

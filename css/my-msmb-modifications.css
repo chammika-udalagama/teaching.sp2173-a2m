@@ -1,0 +1,29 @@
+/*My modifications to msmb.css*/
+/* remove italics and set size */
+blockquote p {
+    font-style: normal;
+    font-size: 1.2rem;
+}
+
+/* restore spacing for notes in quotes */
+blockquote .sidenote {
+    margin-right: -60%;
+    width: 50%;
+}
+
+/*Make all figures centred*/
+img { display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /*border: 2px solid red;*/
+  /*border-width: 2px;*/
+  /*padding-right: 5em;*/
+}
+
+.my-margin,.sidenote{
+  color:rgb(0,0,0,.25);
+  
+}
+
+ol > ul{color:red;}
+

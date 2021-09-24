@@ -1,0 +1,54 @@
+---
+title: "Atoms to Molecules"
+author: "Chammika Udalagama"
+date: "`r Sys.Date()`"
+#knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: yes
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: no
+    margin_references: TRUE
+bibliography: library.bib
+---
+
+# The Meaning of it All!
+```{r, child='_my-latex.Rmd'}
+
+```
+
+Let me demonstrate the Variational Principe by using it with the simple PIB system. It will be a nice comparison because we already know what the answer should be.
+
+What the Variaional Principle gives us is an estimate (for the upper bound) for the first energy level of a system
+
+\def\f{{\color{myGreen}A x (L-x)}}
+\def\fb{{\color{myGreen} x (L-x)}}
+\def\fc{{\color{myGreen} x^{2} (L-x)^{2}}}
+
+Lets first write down the Hamiltonian for the PIB system.
+$$
+\hat{H} = -\frac{\hbar^{2}}{2m} \nabla^{2} + 0
+$$
+
+Lets pretend we do not know the wave function. Lets use a trial wave function that satisfies the boundary conditions:
+$$
+f = \f
+$$
+
+Getting ready:
+$$
+\h f=\h \f = -\frac{\hbar^{2}}{2m} \nabla^{2} \f = -\frac{\hbar^{2}}{2m}\daa{\f}{x} = \frac{\hbar^{2}}{m}A
+$$
+
+\col Using the variational principle:
+\begin{align}
+w&=\frac{\displaystyle \int f^{*} \h {f} \,dx}{\displaystyle \int f^{*}f \,dx}
+= \frac{\displaystyle \int \left[ \f \right]^{*}\left(\frac{\hbar^{2}}{m}A\right) \,dx}{\displaystyle \int \left[ \f \right]^{*} [\f]\,dx}
+= \frac{5 \hbar^{2}}{m L^{2}}
+= \frac{10}{\pi^{2}}\left( \frac{\pi^{2} \hbar^{2}}{2 m L^{2}}\right)
+=1.01321 E_{1}
+\end{align}

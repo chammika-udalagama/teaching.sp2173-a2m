@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Clean up
+rm -rf _main.Rmd _book _bookdown_files
+
+# Run bookdown
+#echo "bookdown::render_book('index.html')" | R --no-save
+
+R -e "Sys.setenv(RSTUDIO_PANDOC='/usr/lib/rstudio/bin/pandoc');bookdown::render_book('index.Rmd',output_dir='docs',encoding = 'UTF-8')"
+#bookdown::render_book('index.Rmd', output_dir = 'docs')
+
+# Adding Hypothesis to the HTML files
+echo "Adding Hypothesis"
+new='<head><script src="https://hypothes.is/embed.js" async></script>'
+
+for f in docs/*.html
+do
+        sed -i 's/<head>/<head><script src="https:\/\/hypothes.is\/embed.js" async><\/script>/1' $f &&   echo "Finished $f"
+done
+
+# Copy icons
+cp my-figures/icons8-idea-480.png docs/my-figures

@@ -1,0 +1,85 @@
+<!-------------------------------------------------------------->
+### Rule 1: Wave functions & Probability density.
+<!-------------------------------------------------------------->
+:::definition
+`r qm_rule_01`
+:::
+* Everything we can know about a system is contained within the wave function ($\Psi$).
+* The wave function can vary in space and time. I.e. $\Psi(x,t)$
+* The wave function is usually complex (i.e. has a imaginary part) and cannot be detected directly.
+* The square of the wave function($|\Psi|^2$) is probability density of locating the particle.
+* A wave function must be normlaised to be useful.
+
+$$
+\int_{x=a}^{x=b} \Psi^*\Psi\, dx =\int_{x=a}^{x=b} |\Psi|^2 dx = \left\{\begin{array}{l}\text{Probability of finding the particle}\\ \text{between $x=a$ and $x=b$}\end{array}\right. (\#eq:qm-rule-01)
+$$
+
+<!-------------------------------------------------------------->
+### Rule 2: Ensembles & Probability
+<!-------------------------------------------------------------->
+
+:::definition
+`r qm_rule_01.5`
+:::
+```{r, fig.cap='A larger number of identical systems. This is called an "ensemble".'}
+knitr::include_graphics('my-figures/ensemble_storm_troopers.jpg')
+```
+
+Measurements play an essential role in QM. QM can predict experimental results but to understand how QM predictions work, you should **always** use the idea of an **ensemble**. Let's say we measure the position ($x$) of an ensemble of particle-in-box system. I.e. we make **identical** measurements to obtain $x$. Since QM has a probabilistic description, each measurement will (in general) be different. All the readings can be combined to give an expectation (i.e. average) value of $\ex{x}$ and a spread of $\sigma_x$. The QM recipe allows us to predict these two values using:
+
+$$
+\newcommand\opEx[1]{\ex{#1} &= \int_{x=-\infty}^{x=+\infty} f^* \hat{#1} f\, dx \\[5pt]}
+$$
+
+\begin{align*}
+\opEx{x}
+\opEx{p}
+\opEx{T}
+\opEx{H}
+\end{align*}
+
+<!-------------------------------------------------------------->
+### Rule 3: Measurements and Quantisation.
+<!-------------------------------------------------------------->
+
+```{r}
+fn0 <- '^[An **operator** is just a fancy word for a mathematical instruction.<br> For example  $\\dfrac{d}{dx}$ just says \'*differentiate w.r.t $x$*\'!<br> So, the operator for momentum, $\\hat{p} \\equiv \\dfrac{\\hbar}{\\imath}\\dfrac{d}{dx}$, says differentiate w.r.t. $x$ and then multiply by $\\hbar/\\imath$]'
+
+fn1 <- '^[This type of equation is more correctly called an *eigevalue equation*.
+$$\\hat{O}f_n = o_n f_n $$
+$f_n$ is the <span class="high">eigenfunction</span> of the operator $\\hat{O}$ that corresponds to the <span class="high">eigenvalue</span> $o_n$
+] '
+
+fn2 <- '^[This operator has a special name; the <span class="high">Hamiltonian</span>]'
+```
+
+:::definition
+`r qm_rule_02`
+:::
+Here are the eigenvalue`r fn1` equations for energy`r fn2`, momentum and position.
+
+\begin{align}
+\text{Energy:}&\quad\quad\hat{H}\psi_n = E_n \psi_n (\#eq:qm-rule-02-energy)\\[5pt]
+\text{Momentum:}&\quad\quad\hat{p}\phi_n = p_n \phi_n (\#eq:qm-rule-02-momentum) \\[5pt]
+\text{Position:}&\quad\quad\hat{x}f_n = x_n f_n (\#eq:qm-rule-02-position)
+\end{align}
+
+<!-- * $\hat{H}$, $\hat{T}$, $\hat{p}$ and $\hat{x}$ are the operators`r fn0` for total energy, K.E., momentum and position respectively. -->
+<!-- * Operators are how quantum mechanics represent measurable quantities.  -->
+Here are the explicit forms of the operators:
+
+
+|         | Position  |                Momentum                 |                       Kinetic energy                       |                       Potential energy                       |                     Total energy                      |
+| ------- | :-------: | :-------------------------------------: | :--------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| Symbol  | $\hat{x}$ |                $\hat{p}$                |                         $\hat{T}$                          |                          $\hat{V}$                           |                          $\hat{H}$                           |
+| Meaning |    $x$    | $\displaystyle -i \hbar\,\frac{d}{d x}$ | $\displaystyle -\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}$ | $\displaystyle -\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+ V(x)$ | $\displaystyle -\frac{\hbar^{2}}{2m}\frac{d^{2}}{d x^{2}}+V(x)$ |
+
+The eigenvalue equation for energy is the famous **Time-independant Schrödinger equation**!
+
+<!-------------------------------------------------------------->
+### Rule 4: Collapsing the wavefunction.
+<!-------------------------------------------------------------->
+
+:::definition
+`r qm_rule_03`
+:::

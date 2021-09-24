@@ -1,0 +1,14 @@
+\documentclass{standalone}
+\input{preamble}
+
+\begin{document}
+\begin{myTikz}[]{1}
+	%File name: electric_field-imbues
+	\def\delx{0.2\lw} 
+	\def\r{0.25mm}
+	\freedraw[dashed,thin] (0,0.5*\h) -- +(\lw,0);
+	\draw[below, font=\scriptsize] (0,0.5*\h) ++(\delx,0)node{$A$} ++(\delx,0)node{$B$} ++(\delx,0)node{$C$}++(\delx,0)node{$D$};
+	\draw[fill=green!50!black] (0,0.5*\h) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r);
+	\freedraw (0,0.5*\h)node[draw=black, fill=gray!10,thick,shape=circle]{\scriptsize $+Q$};
+\end{myTikz}
+\end{document}

@@ -1,0 +1,54 @@
+\documentclass{standalone}
+\input{preamble}
+
+\begin{document}
+\begin{myTikz}[]{0.15\th}
+	%File name: vector_components
+	\def\ang{50}
+	
+	\def\w{15cm}
+	\def\h{4 cm}
+	
+	\useasboundingbox (-.125*\w,-.125*\h) rectangle +(1.25*\w,\h*1.25);
+	%	\draw (-.125*\w,-.125*\h) rectangle +(1.25*\w,\h*1.25);
+	
+	\def\base{
+		\freedraw[->,Maroon] (0,0) -- +(\ang:\h)node[above left]{\color{black}$\vec{F}$};
+		\freedraw[thin,->,gray,] (1.25,0) arc(0:\ang:1.25);
+		\freedraw[gray] (24:0.85) node{$\theta$};
+	}
+	
+	\begin{scope}[xshift=-.075*\w,yshift=0.125*\h]
+		\base
+		\freedraw[dashed,thin, gray] (-0.05*\w,0)--(1.05*\w,0);
+		\freedraw[->,black!60,thin] (0,0) -- +({\h*cos(\ang)},0)node[below]{$F\cos \theta$};
+		\freedraw[->,black!70,thick] (0,0) ++({1.025*\h*cos(\ang)},0) -- +(0,{\h*sin(\ang)})node[below right]{$F\sin \theta$};
+		\freedraw[dashed,thin] (-0.05*\w,0)--(1*\w,0);
+	\end{scope}
+	
+	
+	\begin{scope}[xshift=.3*\w,yshift=0.125*\h]
+		\def\aa{30}
+		\base
+		\def\r{0.125*\w}
+		\freedraw[thin,gray!50] (0,0)++(\aa:0.25*\w)--+(\aa:-0.3*\w);t
+		\freedraw[thin,->,gray] (\r,0) arc(0:\aa:\r);
+		\freedraw[->,black!60,thin] (0,0) -- +(\aa:{\h*cos(\ang-\aa)})node[below right]{$F\cos (\theta - \alpha)$};
+		\freedraw[->,black!70,thick] (0,0) -- ++(\aa:{\h*cos(\ang-\aa)}) -- +(90+\aa:{\h*sin(\ang-\aa)})node[right]{$F\sin (\theta - \alpha)$};
+		
+		\freedraw[gray] (0.45*\aa:1.1*\r) node{$\alpha$};
+		
+	\end{scope}
+	
+	\begin{scope}[xshift=.925*\w,yshift=0.125*\h]
+		\def\aa{110}
+		\base
+		\def\r{0.05*\w}
+		\freedraw[thin,gray!50] (0,0)++(\aa:0.2*\w)--+(\aa:-0.24*\w);
+		\freedraw[gray] (180-0.25*\aa:1.25*\r) node{$\beta$};
+		\freedraw[thin,->,gray] (-\r,0) arc(180:\aa:\r);
+		\freedraw[->,black!60,thin] (0,0) -- +(\aa:{\h*cos(\ang-\aa)})node[above left]{$-F\cos (\theta + \beta)$};
+		\freedraw[->,black!70,thick] (0,0) -- ++(\aa:{\h*cos(\ang-\aa)}) -- +(92+\aa:{\h*sin(\ang-\aa)})node[left=0.035*\w]{$F\sin (\theta + \beta)$};
+	\end{scope}
+\end{myTikz}
+\end{document}

@@ -1,0 +1,23 @@
+---
+title: "Atoms to Molecules"
+author: "Chammika Udalagama"
+date: "`r Sys.Date()`"
+#knit: "bookdown::preview_chapter"
+site: "bookdown::bookdown_site"
+link-citations: yes
+output:
+  msmbstyle::msmb_html_book:
+    highlight: tango
+    toc: TRUE
+    toc_depth: 1
+    split_by: chapter
+    split_bib: no
+    margin_references: TRUE
+bibliography: library.bib
+---
+
+# Quick Type
+
+```{r input-setup-file_chap-00,child='my-setup.Rmd'}
+
+```
