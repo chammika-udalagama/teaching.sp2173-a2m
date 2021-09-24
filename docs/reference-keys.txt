@@ -96,7 +96,7 @@ fig:fig-multiple-slits
 fig:fig-diffraction-grating
 eq:diff-equ
 fig:fig-qm-1-xkcd-start
-fig:unnamed-chunk-23
+fig:unnamed-chunk-22
 fig:video-chap-05-main
 fig:fig-qm-1-diffraction-of-light
 fig:fig-qm-1-realTwoSlit
@@ -138,7 +138,7 @@ def:unlabeled-div-17
 fig:fig-qm-2-xkcd-complex-humour
 eq:complex-modulus
 eq:complex-euler
-fig:unnamed-chunk-33
+fig:unnamed-chunk-32
 fig:video-chap-07-main
 eq:gen-operator
 def:unlabeled-div-18
@@ -156,13 +156,13 @@ fig:fig-qm-3-ibm
 fig:vid-bouncing-droplets
 fig:tab-h-states
 fig:fig-projectionsOfH
-fig:unnamed-chunk-38
+fig:unnamed-chunk-37
 fig:video-chap-08-main
 fig:fig-stormTroopers
 def:unlabeled-div-19
 def:unlabeled-div-20
 eq:heisenberg
-fig:unnamed-chunk-40
+fig:unnamed-chunk-39
 fig:video-chap-09-main
 def:unlabeled-div-21
 def:unlabeled-div-22
@@ -174,7 +174,7 @@ fig:fig-qm-5-components
 def:unlabeled-div-23
 fig:video-chap-09-sheldon
 fig:video-chap-09-gerald
-fig:unnamed-chunk-45
+fig:unnamed-chunk-44
 fig:vid-stern-gerlach
 def:unlabeled-div-24
 fig:video-chap-09-calculus
@@ -209,7 +209,6 @@ back-to-energy
 a-worthy-digression
 temperature
 my-3-cents
-the-meaning-of-it-all
 calculus-the-power-to-tame-change
 what-we-have-in-store
 differentiation-and-integration-the-two-sides-of-the-calculus-coin
