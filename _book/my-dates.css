@@ -1,0 +1,141 @@
+table.table-dates {
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 25px;
+    width: 850px;
+}
+
+table.table-dates thead tr {
+    height: 30px;
+    border-top: 2px solid #fffff8;
+    border-bottom: 2px solid black;
+}
+
+
+/*Widths*/
+
+table.table-dates thead th:nth-of-type(1) {
+    width: 25px;
+}
+
+table.table-dates thead th:nth-of-type(2) {
+    width: 50px;
+}
+
+table.table-dates thead th:nth-of-type(3) {
+    width: 50px;
+}
+
+table.table-dates thead th:nth-of-type(4) {
+    width: 75px;
+}
+
+table.table-dates thead th:nth-of-type(5) {
+    width: 25px;
+}
+
+table.table-dates thead th:nth-of-type(6) {
+    width: 75px;
+}
+
+table.table-dates thead th:nth-of-type(7) {
+    width: 75px;
+}
+
+table.table-dates thead th:nth-of-type(8) {
+    width: 100px;
+}
+
+
+/*-----------------Body-----------------*/
+
+
+/*Justification*/
+
+table.table-dates tbody tr:nth-of-type(1) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(7) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(8) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(9) td:nth-of-type(3) {
+    color: saddlebrown;
+}
+
+
+/*Borders*/
+
+table.table-dates tbody tr {
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+}
+
+table.table-dates tbody tr:last-of-type,
+table.table-dates tbody tr:nth-of-type(7) td:nth-of-type(6) {
+    border-bottom: 2px solid black;
+}
+
+table.table-dates tbody tr:nth-of-type(1) td:nth-of-type(1),
+table.table-dates tbody tr:nth-of-type(1) td:nth-of-type(2),
+table.table-dates tbody tr:nth-of-type(1) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(3) td:nth-of-type(5),
+table.table-dates tbody tr:nth-of-type(3) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(4),
+
+/**/
+
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(1),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(2),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(6),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(8),
+table.table-dates tbody tr:nth-of-type(6),
+
+/**/
+
+table.table-dates tbody tr:nth-of-type(7),
+table.table-dates tbody tr:nth-of-type(8) {
+    border-bottom: 1px solid black;
+}
+
+table.table-dates tbody tr:nth-of-type(1) td:nth-of-type(7),
+table.table-dates tbody tr:nth-of-type(2) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(2) td:nth-of-type(4),
+table.table-dates tbody tr:nth-of-type(3) td:nth-of-type(4),
+table.table-dates tbody tr:nth-of-type(3) td:nth-of-type(5),
+table.table-dates tbody tr:nth-of-type(4) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(5) td:nth-of-type(7),
+table.table-dates tbody tr:nth-of-type(6) td:nth-of-type(3),
+table.table-dates tbody tr:nth-of-type(7) td:nth-of-type(7),
+table.table-dates tbody tr:nth-of-type(8) td:nth-of-type(6),
+table.table-dates tbody tr:nth-of-type(8) td:nth-of-type(7),
+table.table-dates tbody tr:nth-of-type(9) td:nth-of-type(6),
+table.table-dates tbody tr:nth-of-type(9) td:nth-of-type(7),
+table.table-dates tbody td:nth-of-type(8) {
+    font-size: .85em;
+}
+
+
+/*Other stuff*/
+
+.date-day {
+    color: gray;
+    font-size: .75em;
+}
+
+.date-date {
+    color: black;
+    font-size: 1.em;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    /*    background: red;*/
+}
+
+.date-week {
+    color: gray;
+    font-size: .75em;
+}
+
+.date-sub {
+    color: gray;
+    font-size: .75em;
+}

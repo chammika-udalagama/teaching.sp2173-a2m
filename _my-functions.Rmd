@@ -1,0 +1,45 @@
+```{r,echo=FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  strip.white = FALSE,
+  prompt = FALSE,
+  comment = '##',
+  highlight = TRUE,
+  size = 'normalsize',
+  # background = '#FFFFFF',
+  # engine = 'python'
+  # class.source = 'rrrr'
+  tidy = TRUE,
+  echo = FALSE,
+  tidy.opts=list(blank=FALSE, width.cutoff=100),
+  fig.width = 4
+)
+```
+
+```{r}
+me <- list(ctr_eg = 0)
+class(me) <- "my_functions"
+```
+
+```{r}
+me.link <- function(href = '',content = ' '){
+  a <- '<a href="'
+  b <- '", target = "_blank">'
+  c <- '</a>'
+  return(paste(a,href,b,content,c))
+}
+```
+
+```{r}
+me.hi<- function(text){
+  return(paste('<span class="high">',text,'</span>'))
+}
+```
+```{r}
+me.def<- function(text){
+  return(paste('<span class="my-def">',text,'</span>'))
+}
+```
+
+<!-- %:highlight math part in an equation -->
+<!-- \newcommand{\mathHigh}[2][gray!10]{\colorbox{#1}{$\displaystyle#2$}} -->

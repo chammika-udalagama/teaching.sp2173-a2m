@@ -1,0 +1,97 @@
+```{r, echo=FALSE,fig.fullwidth = TRUE, results='asis'}
+library(readxl)
+library(knitr)
+
+cmd <- ''
+my_add <- function(text){
+  cmd <<- paste(cmd,text,sep = '\n')
+}
+
+add_row <- function(row_data){
+  
+  my_add(text='<tr>')
+  for(i in 1:length(row_data)){
+    t0 = '<td>'
+    t1 = '</td>'
+    
+    my_add(paste(t0,row_data[i],t1))
+  }
+  my_add(text='</tr>')
+}
+
+
+cmd <- ''
+location <- '../bin/schedule.xlsx'
+df <- read_excel(location, 
+    col_types = c("text", "date", "numeric", 
+        "text", "numeric", "numeric", "skip","text", 
+        "skip", "skip", "skip"))
+
+no_of_rows = nrow(df)
+df[is.na(df)] <- ' '                  # Remove all NA
+
+#------------------- Fix dates --------------------
+df$Date <-as.character(df$Date,format='%A <br> <span class="xxx-date">%d-%b</span>')
+# df$Date <-as.character(df$Date,format='%A')
+
+#------------------- Fix IS --------------------
+flag <- df$IS !=' '
+df$IS[flag] <-paste('IS',df$IS[flag])
+
+#------------------- Fix HW --------------------
+flag <- df$Homework !=' '
+df$Homework[flag] <-paste('HW',df$Homework[flag])
+
+
+#------------------- Add ids---------------------------
+for(i in c(1:nrow(df)))
+  for(j in c(1:ncol(df))){ 
+    temp = sprintf("<td id=\"r%02d-c%02d\">%s</td>",i,j,as.character(df[i,j]))
+ # df[i,j] <- paste('<td id="',id,'">',df[i,j],'</td>')
+    df[i,j] <- temp
+}
+
+#-------------------- Merge rows---------------------------
+df$Week[seq(2,no_of_rows,2)] = ' '
+df$Week = gsub('<td','<td rowspan="2" ',df$Week)
+
+row_recess <- 15
+df[c(row_recess,row_recess+1),c(3,4,5)] <- rep(' ',3)
+df[row_recess,3] <- '<td id="xxx_recess" colspan="3" rowspan="2">Recess</td>'
+
+row_recess <- 29
+df[c(row_recess,row_recess+1),c(3,4,5)] <- rep(' ',3)
+df[row_recess,3] <- '<td id="xxx_final-viva" colspan="3" rowspan="2">Final Viva</td>'
+
+
+#----------------------------------------------------------#
+#                          Final HTML                      #
+#----------------------------------------------------------#
+cmd <- ' '
+my_add('<table class="xxx">')
+#------------------Head----------------
+
+my_add(text='<thead>')
+# cols <- colnames(x)
+add_row(c( "" ,    " "    , " " , "Topic"  ,  "", "IS"   ,    "Note" ))
+my_add(text='</thead>')
+
+#------------------Body----------------
+my_add(text='<tbody>')
+
+for(row in c(1:no_of_rows)){
+my_add(paste('<!--- Row',row,'--->'))  
+my_add(text='<tr>')
+  for(i in 1:ncol(df))
+    my_add(df[row,i])
+  
+  my_add(text='</tr>')
+}
+
+my_add(text='</tbody>')
+
+my_add(text='</table>')
+
+cat(cmd)
+```
+

@@ -1,0 +1,288 @@
+/*----------------------------------------*/
+
+
+/*                                        */
+
+
+/*              main table                */
+
+
+/*                                        */
+
+
+/*----------------------------------------*/
+
+table.xxx {
+    margin-top: 25px;
+    border-collapse: collapse;
+    table-layout: fixed;
+    text-align: center;
+    margin-right: auto;
+    font-size: 1.15em;
+    width: 800px;
+}
+
+
+/*------------Head---------------*/
+
+table.xxx thead {}
+
+table.xxx thead tr:nth-of-type(1) {
+    font-weight: bold;
+    /*    height: 40px;*/
+    border-top: 2px solid #fffff8;
+    border-bottom: 2px solid black;
+}
+
+
+/*------------widths---------------*/
+
+
+/*Week*/
+
+table.xxx thead td:nth-of-type(1) {
+    width: 75px;
+}
+
+
+/*Date*/
+
+table.xxx thead td:nth-of-type(2) {
+    width: 125px;
+}
+
+
+/*Session*/
+
+table.xxx thead td:nth-of-type(3) {
+    width: 50px;
+}
+
+
+/*Topic*/
+
+table.xxx thead td:nth-of-type(4) {
+    width: 250px;
+}
+
+
+/*HW, IS*/
+
+table.xxx thead td:nth-of-type(5),
+table.xxx thead td:nth-of-type(6) {
+    width: 75px;
+}
+
+
+/*Note*/
+
+table.xxx thead td:nth-of-type(7) {
+    width: auto;
+}
+
+
+/*------------Justification---------------*/
+
+
+/*
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(2),
+table.xxx tbody tr:nth-of-type(2n+2) td:nth-of-type(1),
+*/
+
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(4),
+table.xxx tbody tr:nth-of-type(2n+2) td:nth-of-type(3),
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(7),
+table.xxx tbody tr:nth-of-type(2n+2) td:nth-of-type(6) {
+    text-align: left;
+    /*    background: red;*/
+}
+
+
+/*------------Fonts---------------*/
+
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(1) {
+    opacity: .5;
+    font-size: .85em;
+}
+
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(1):before {
+    /*    content: 'Week';*/
+}
+
+
+/*------------Body---------------*/
+
+table.xxx tbody tr {
+    height: 35px;
+}
+
+table.xxx tbody tr:nth-of-type(2n+1) td:nth-of-type(1) {
+    border-bottom: 1px solid black;
+    max-width: 20px;
+}
+
+table.xxx tbody td {
+    padding-top: 5px;
+    /*        border:1px solid blue;*/
+}
+
+
+/*------------Borders---------------*/
+
+table.xxx tbody tr:nth-of-type(2n+2) {
+    border-top: 1px solid #f0f0f0;
+    border-bottom: 1px solid black;
+}
+
+table.xxx tbody tr:last-of-type {
+    border-bottom: 2px solid black;
+}
+
+
+/*------------Colours---------------*/
+
+table.xxx tbody tr:nth-of-type(3),
+table.xxx tbody tr:nth-of-type(4),
+table.xxx tbody tr:nth-of-type(7),
+table.xxx tbody tr:nth-of-type(8),
+table.xxx tbody tr:nth-of-type(11),
+table.xxx tbody tr:nth-of-type(12),
+table.xxx tbody tr:nth-of-type(15),
+table.xxx tbody tr:nth-of-type(16),
+table.xxx tbody tr:nth-of-type(19),
+table.xxx tbody tr:nth-of-type(20),
+table.xxx tbody tr:nth-of-type(23),
+table.xxx tbody tr:nth-of-type(24),
+table.xxx tbody tr:nth-of-type(27),
+table.xxx tbody tr:nth-of-type(28),
+table.xxx tbody tr:nth-of-type(31),
+table.xxx tbody tr:nth-of-type(32) {
+    background: #fafafa;
+}
+
+
+/*Recess*/
+
+table.xxx tbody tr:nth-of-type(15),
+table.xxx tbody tr:nth-of-type(16) {
+    background: #dfecdf
+}
+
+
+/*Fina viva*/
+
+table.xxx tbody tr:nth-of-type(29) td:nth-of-type(1),
+table.xxx tbody tr:nth-of-type(29),
+table.xxx tbody tr:nth-of-type(30) {
+    background: khaki
+}
+
+
+/*Presentations*/
+
+table.xxx tbody tr:nth-of-type(31) {
+    background: lightblue;
+}
+
+#r12-c04,
+#r31-c04 {
+    text-align: center;
+    color: darkblue;
+    font-weight: bold;
+}
+
+#r05-c04 {
+    text-align: center;
+    color: darkgreen;
+     font-weight: bold;
+}
+
+
+table.xxx tbody tr:nth-of-type(15) {
+    border-top: 2px solid black
+}
+
+table.xxx tbody tr:nth-of-type(15) td:nth-of-type(1),
+table.xxx tbody tr:nth-of-type(16) {
+    border-bottom: 2px solid black
+}
+
+
+/*VIVA*/
+
+#r13-c04,
+#r14-c04,
+#r21-c04,
+#r22-c04 {
+    /*    background: linear-gradient(to right, rgba(255,0,0,0),khaki,rgba(255,0,0,0)); */
+    text-align: center;
+    color: saddlebrown;
+     font-weight: bold;
+}
+
+#xxx_final-viva {
+    color: darkred;
+    /*        background: khaki;*/
+    font-size: 1.15em;
+     font-weight: bold;
+}
+
+#xxx_recess {
+    color: darkred;
+    border-bottom: 2px solid black;
+    font-size: 1.15em;
+}
+
+
+/*----------------------------------------*/
+
+
+/*                                        */
+
+
+/*              other stuff               */
+
+
+/*                                        */
+
+
+/*----------------------------------------*/
+
+.no-sessions {
+    opacity: .35
+}
+
+.tbl {
+    color: darkgreen;
+}
+
+.expt-viva {
+    color: darkblue;
+}
+
+.xxx-date {
+    color: darkred;
+    font-size: small;
+    opacity: .75;
+}
+
+
+/*----------------------------------------*/
+/*              other stuff               */
+
+
+/*                                        */
+
+
+/*----------------------------------------*/
+
+.high{
+  color:darkred;
+  font-style: italic;
+}
+
+.my-def{
+  margin-left: 100px;
+  color:darkgreen;
+  font-style: italic;
+}

@@ -1,0 +1,8 @@
+bookdown::tufte_html_book:
+  toc: yes
+#  toc_float: true
+  css: [toc.css,my-css.css]
+  includes:
+    in_header: 'hypothesis.html'
+  split_by: section
+

@@ -1,0 +1,5 @@
+book_filename: "a2m-book"
+language:
+  ui:
+    chapter_name: "Note "
+delete_merged_file: true

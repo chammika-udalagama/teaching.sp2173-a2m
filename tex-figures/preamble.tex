@@ -1,6 +1,5 @@
 
-\usepackage{booktabs,tikz, ifthen, amsmath,dcolumn}
-\usepackage{xcolor}
+\usepackage{tikz, ifthen}
 
 %\usetikzlibrary{calc}
 \usetikzlibrary{
@@ -24,8 +23,7 @@
 %:-----------------------------------------------------------------
 %:colours
 %:-----------------------------------------------------------------
-%\definecolor{tufte}{RGB}{255,255,248}
-\definecolor{tufte}{RGB}{255,255,255}
+\definecolor{tufte}{RGB}{255,255,248}
 \definecolor{Maroon}{RGB}{139, 0, 0}
 %:-----------------------------------------------------------------
 %:new environment
@@ -75,17 +73,3 @@
 }{\end{tikzpicture}}
 
 \def\freedraw#1;{\draw[free hand] #1;}
-
-%:-----------------------------------------------------------------
-%:new functions
-%:-----------------------------------------------------------------
-\newcommand{\myvec}[4][ultra thick]{
-	%options, start, end-angle, end-length
-	\freedraw[{#1}]  {#2} -- +({#3}:{#4});
-	\freedraw[-triangle 45,{#1}]  {#2} ++({#3}:{.4*#4})-- +({#3}:{.1*#4});
-}
-
-%:modifies table 'headers'
-\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
-\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}

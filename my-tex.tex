@@ -1,0 +1,16 @@
+\usepackage{color}
+  \definecolor{blueSeb}{RGB}{30,115,190}
+  \definecolor{advertcolor}{HTML}{FF8929}
+  
+
+  \newenvironment{blueShaded}[1][D6E8F5]{
+  \definecolor{shadecolor}{HTML}{#1}%
+  \begin{snugshade}%
+  }{%
+  \end{snugshade}%
+  }
+  
+  \newcommand{\advert}[1]{\textit{\advertcolor{#1}}}
+  
+  \definecolor{backcolor}{RGB}{235, 235, 235}
+  \newcommand{\codecommand}[1]{\texttt{\colorbox{backcolor}{#1}}}

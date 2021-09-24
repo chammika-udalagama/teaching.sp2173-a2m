@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta property="og:title" content="Atoms to Molecules" />
+<meta property="og:type" content="book" />
+
+
+<meta property="og:description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook." />
+
+
+<meta name="author" content="Chammika Udalagama" />
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+  <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_CHTML-full" type="text/javascript"></script>
+
+<meta name="description" content="This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook.">
+
+<title>Atoms to Molecules</title>
+
+<link href="libs/tufte-css-2015.12.29/tufte.css" rel="stylesheet" />
+<script src="https://hypothes.is/embed.js" async></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ TeX: { extensions: ["color.js"] }});
+</script>
+
+
+
+
+<link rel="stylesheet" href="toc.css" type="text/css" />
+<link rel="stylesheet" href="my-css.css" type="text/css" />
+
+</head>
+
+<body>
+
+
+
+<div class="row">
+<div class="col-sm-12">
+<div id="TOC">
+<ul>
+<li><a href="index.html#section"></a></li>
+<li class="has-sub"><a href="schedule.html#schedule">Schedule</a><ul>
+<li><a href="schedule.html#general">General</a></li>
+<li><a href="schedule.html#interactive-sessions">Interactive Sessions</a></li>
+</ul></li>
+<li><a href="assessment.html#assessment">Assessment</a></li>
+<li class="has-sub"><a href="ab-is-for.html#ab-is-for"><span class="toc-section-number">1</span> ‘A’,’’B is for …</a><ul>
+<li><a href="ab-is-for.html#vectors-scalars"><span class="toc-section-number">1.1</span> Vectors &amp; scalars</a></li>
+<li><a href="ab-is-for.html#components-resultant-of-a-vector"><span class="toc-section-number">1.2</span> Components &amp; resultant of a vector</a></li>
+<li><a href="ab-is-for.html#what-is-a-force"><span class="toc-section-number">1.3</span> What is a force?</a></li>
+<li><a href="ab-is-for.html#mass"><span class="toc-section-number">1.4</span> Mass</a></li>
+<li><a href="ab-is-for.html#sec:eg:constantForce"><span class="toc-section-number">1.5</span> A Simple Example</a></li>
+</ul></li>
+<li><a href="question-box.html#question-box"><span style="color:darkred;">Question Box</span></a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<div id="ab-is-for" class="section level1">
+<h1><span class="header-section-number">Note 1</span> ‘A’,’’B is for …</h1>
+<!-- %:highlight math part in an equation -->
+<!-- \newcommand{\mathHigh}[2][gray!10]{\colorbox{#1}{$\displaystyle#2$}} -->
+<div id="vectors-scalars" class="section level2">
+<h2><span class="header-section-number">1.1</span> Vectors &amp; scalars</h2>
+<p>We can categorise quantities (e.g. temperature, force, energy, distance ) as being either a <span class="high"> vector </span> or <span class="high"> scalar </span>.</p>
+<p>A <span class="high"> scalar </span> is something that can <em>completely</em> be defined by just giving a number. Examples are mass (50 kg), temperature (-20 <span class="math inline">\(^\circ\)</span>C), distance (100 km), height (180 cm). Scalar quantities are usually easier to use because they are just numbers.</p>
+<p>
+<span class="marginnote shownote"><!--
+<div class="figure">--> <img src="tex-figures/fig_vector_simple.png" alt="A vector has a size (magnitude) and a direction. It is usual to indicate a vector using an arrow. The length and direction of the arrow represents the magnitude and direction of the vector respectively." width="75%"  /> <!--<span id="fig:fig-vector-arrow"></span>
+<p class="caption marginnote">-->Figure 1.1: A vector has a size (magnitude) and a direction. It is usual to indicate a vector using an arrow. The length and direction of the arrow represents the magnitude and direction of the vector respectively.<!--</p>--> <!--</div>--></span>
+</p>
+<p>A vector is something that needs <em>two</em> things, to be completely defined. One is a number (called the magnitude or modulus), and the other is a direction. A vector quantity will not make sense without both these bits of information. Examples are a force (10 N downwards), velocity (50 km/h due north), displacement (10 m to the left).</p>
+<p>A vector has a size (magnitude) and a direction. It is usual to indicate a vector using an arrow (see figure <a href="ab-is-for.html#fig:fig-vector-arrow">1.1</a>). The length and direction of the arrow represents the magnitude and direction of the vector respectively.</p>
+</div>
+<div id="components-resultant-of-a-vector" class="section level2">
+<h2><span class="header-section-number">1.2</span> Components &amp; resultant of a vector</h2>
+<p>
+<span class="marginnote shownote"><!--
+<div class="figure">--> <img src="tex-figures/fig_vector_simple-addition.png" alt="Two or more vectors can be added to yield a single resultant vector. The usual way to add vectors is to draw them end to end as shown. The vector completing the shape colour is the resultant." width="75%"  /> <!--<span id="fig:fig-vectorResultant"></span>
+<p class="caption marginnote">-->Figure 1.2: Two or more vectors can be added to yield a single resultant vector. The usual way to add vectors is to draw them end to end as shown. The vector completing the shape colour is the resultant.<!--</p>--> <!--</div>--></span>
+</p>
+<p>Adding and subtracting vectors are interesting since we need to take the direction into account. Two important concepts related to vectors are <span class="high"> resultant </span> and <span class="high"> components </span>.</p>
+<p>As shown in figure <a href="ab-is-for.html#fig:fig-vectorResultant">1.2</a>, two vectors can be combined (added) to give one vector. This single vector is called the <span class="high"> resultant </span> of the two vectors and <em>brings about the same result as the other vectors combined</em>.</p>
+<p>Just as we can combine different vectors to give one, we can do the reverse and split one vector into many parts. One of the most useful ways is to split into two perpendicular directions as shown in figure <a href="ab-is-for.html#fig:fig-vectorComponents">1.3</a>.</p>
+<div class="figure fullwidth"><span id="fig:fig-vectorComponents"></span>
+<img src="tex-figures/fig_vector_components.png" alt="Shown are three instances where the same vector (shown in &lt;span class=&quot;high&quot;&gt;&lt;span class=&quot;high&quot;&gt;colour&lt;/span&gt;&lt;/span&gt;) is split into components.  First parallel and perpendicular to the horizontal and two directions at angles $\alpha$ and $\beta$. Often the most convenient is the split into two components that are perpendicular to each other." width="100%"  />
+<p class="caption marginnote shownote">
+Figure 1.3: Shown are three instances where the same vector (shown in <span class="high"><span class="high">colour</span></span>) is split into components. First parallel and perpendicular to the horizontal and two directions at angles <span class="math inline">\(\alpha\)</span> and <span class="math inline">\(\beta\)</span>. Often the most convenient is the split into two components that are perpendicular to each other.
+</p>
+</div>
+<!------------------------------------------------------>
+</div>
+<div id="what-is-a-force" class="section level2">
+<h2><span class="header-section-number">1.3</span> What is a force?</h2>
+<!------------------------------------------------------>
+<p>
+<span class="marginnote shownote"><!--
+<div class="figure">--> <img src="my-figures/a2m_push-pull.png" alt="A force is a push or a pull." width="100%"  /> <!--<span id="fig:fig-forceWhat"></span>
+<p class="caption marginnote">-->Figure 1.4: A force is a push or a pull.<!--</p>--> <!--</div>--></span>
+</p>
+<p><span class="my-def"> A force is simply a push or a pull. </span></p>
+<p>
+<span class="marginnote shownote"><!--
+<div class="figure">--> <img src="my-figures/a2m_force-do.png" alt="A force can change the velocity of a mass." width="100%"  /> <!--<span id="fig:fig-forceDo"></span>
+<p class="caption marginnote">-->Figure 1.5: A force can change the velocity of a mass.<!--</p>--> <!--</div>--></span>
+</p>
+<p>A force is a vector and we need to specify both the direction and magnitude to describe a force. As shown in figure <a href="ab-is-for.html#fig:fig-forceDo">1.5</a>, when a force<label for="tufte-sn-1" class="margin-toggle sidenote-number">1</label><input type="checkbox" id="tufte-sn-1" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">1</span> What we mean here is a net or resultant force.</span> acts on a mass it changes the velocity of the mass. I.e. a force can change the speed and direction of a mass.</p>
+<p>We know from everyday experience that more force means more acceleration. We also know that more mass means less acceleration. These ideas<label for="tufte-sn-2" class="margin-toggle sidenote-number">2</label><input type="checkbox" id="tufte-sn-2" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">2</span> This is Newton’s 2<sup>nd</sup> law of motion. It is usually written<br> <span class="math inline">\(F=ma\)</span></span> can be captured mathematically as</p>
+<p><span class="math display">\[a = \dfrac{F}{m}\]</span></p>
+<!----------------------------------------------------------------------->
+</div>
+<div id="mass" class="section level2">
+<h2><span class="header-section-number">1.4</span> Mass</h2>
+<!----------------------------------------------------------------------->
+<p><span class="high"> Mass </span> indicates how much matter there is in an object and is a fundamental property<label for="tufte-sn-3" class="margin-toggle sidenote-number">3</label><input type="checkbox" id="tufte-sn-3" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">3</span> Like <span class="high"> charge </span> and <span class="high"> spin </span></span> of matter. Mass also is a measure of how reluctant the object is to change its motion. More specifically, mass is an indication of how difficult it is to speed up, slow down or change the direction of the object. This property of matter (i.e. its ‘stubbornness’ to a change in motion) is referred to as <span class="high"> inertia </span>.</p>
+<p>Due to this reluctance, objects like to maintain whatever state of motion they are in. This means objects at rest like to stay at rest and those in motion like to continue moving (in a straight line). So <em>you do not need a force to maintain motion</em><label for="tufte-sn-4" class="margin-toggle sidenote-number">4</label><input type="checkbox" id="tufte-sn-4" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">4</span> In everyday life it <em>appears</em> otherwise because of frictional forces.</span>.</p>
+<p>This is what is stated in Newton’s 1<sup>st</sup> Law<label for="tufte-sn-5" class="margin-toggle sidenote-number">5</label><input type="checkbox" id="tufte-sn-5" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">5</span> Newton’s 1<sup>st</sup> Law: An object will continue in its state of rest or uniform (unaccelerated) motion in a straight line unless acted upon by an external force.</span>.</p>
+</div>
+<div id="sec:eg:constantForce" class="section level2">
+<h2><span class="header-section-number">1.5</span> A Simple Example</h2>
+<p>Consider the situation shown in  where a constant force acts on a mass over a distance <span class="math inline">\(x\)</span>.</p>
+<p>From our everyday experience we expect that the speed of the mass should increase in the situation shown. Let see if a mathematical analysis of the situation yields a similar conclusion.</p>
+<div class="figure"><span id="fig:fig-constantForce"></span>
+<p class="caption marginnote shownote">
+Figure 1.6: A constant force <span class="math inline">\(F\)</span> acting on a mass over a distance <span class="math inline">\(x\)</span>.
+</p>
+<img src="my-figures/a2m_constant-force-mass.png" alt="A constant force $F$ acting on a mass over a distance $x$." width="100%"  />
+</div>
+<p>Starting with Newton’s 2<sup>nd</sup> law:</p>
+<p><span class="math display">\[
+\begin{aligned}
+\newcommand{\mathHigh}[1]{#1 }
+\def\hi{}
+\def\hii{}
+\def\hiii{}
+\def\ie{\text{I.e.}:}
+\newcommand\mnote[1]{}
+\def\there{}
+F = m \mathHigh{a}  &amp;= m \mathHigh{\frac{d \hi v}{dt}}\\ &amp;= m \frac{d \hi v}{dt} \times\left( \dfrac {d  \hii x} {dx}\right) \\&amp;= m \mathHigh{\dfrac {d \hii x} {dt} }  \times  \frac{d  \hi v}{dx}\\
+&amp;= m \,\mathHigh{v}  \,\frac{d\hi v}{dx}    \\%\label{eq:vdvdx}\eqn\\
+\ie \dfrac {F} {m}&amp;=v\dfrac {dv} {dx}\\
+\Rightarrow  \mathHigh{\dfrac {F} {m}} \int _{0}^{x}dx &amp;=\int _{u}^{v}vdv\\
+\ie\mathHigh{a} \bigg[x \bigg] _{0}^{x}&amp;=\left[ \dfrac {1} {2}v^{2}\right] _{u}^{v}\mnote{$a$ is constant}\\
+\there ax&amp;=\dfrac {v^{2}-u^{2}} {2} 
+\end{aligned} 
+\]</span> This leads to: <span class="math display">\[
+v^{2}=u^{2}+2ax 
+\]</span></p>
+<p><br><br> Notice how this equation beautifully explains what we intuitivley knew but in the succinct language of mathematics. For instance that the speed will increase<label for="tufte-sn-6" class="margin-toggle sidenote-number">6</label><input type="checkbox" id="tufte-sn-6" class="margin-toggle"><span class="sidenote"><span class="sidenote-number">6</span> If you are wondering; the maximum speed that can be attained in this simple model is infinite. However, this is not a very realistic situation as we have not included resistive forces such as air-resistance and friction. If you really, want to be picky, then you need to think of Einstein’s Theory of Special Relativity which dictates that the maximum speed that anything can attain is the speed of light(<span class="math inline">\(c\)</span>).</span> if the force acts for a longer distance. Or that the speed will remain steady if there is no force (<span class="math inline">\(a=0\)</span>).</p>
+<!-- $$ -->
+<!-- \begin{align*} -->
+<!--  AR(p): Y_i &= c + \epsilon_i + \phi_i Y_{i-1} \dots \\ -->
+<!--  Y_{i} &= c + \phi_i Y_{i-1} \dots -->
+<!--  z = \mathHigh{x} -->
+<!-- \end{align*} -->
+<!-- $$ -->
+
+</div>
+</div>
+<p style="text-align: center;">
+<a href="assessment.html"><button class="btn btn-default">Previous</button></a>
+<a href="question-box.html"><button class="btn btn-default">Next</button></a>
+</p>
+</div>
+</div>
+
+
+
+</body>
+</html>

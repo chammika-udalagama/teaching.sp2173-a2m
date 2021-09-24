@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>A2M Mentors</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--    -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+    <!--
+    <link rel="stylesheet" href="./css/tufte.css" />
+    <link rel="stylesheet" href="./css/latex.css" />
+-->
+    <link rel=stylesheet href="../css/chamStyle.css">
+    <link rel="stylesheet" href="../css/myBootstrap.css">
+    <!--    -->
+    <link rel="stylesheet" href="../css/tufte.css" />
+    <link rel="stylesheet" href="../css/latex.css" />
+    <script type="text/javascript" src="../js/myJs.js"></script>
+</head>
+<style media="screen" type="text/css">
+    body {
+        font-size: large;
+    }
+    
+    table {
+        border-collapse: collapse;
+        table-layout: fixed;
+        text-align: center;
+        padding-top: 50px;
+    }
+    /*--------------------------------------*/
+    
+    table.all {
+        border-collapse: collapse;
+        table-layout: fixed;
+        padding-top: 100px;
+        text-align: center;
+    }
+    
+    table.all th {
+        text-align: center;
+    }
+    
+    table.all th:nth-child(1) {
+        width: 150px;
+    }
+    
+    table.all th:nth-child(2) {
+        width: 100px;
+    }
+    
+    table.all th:nth-child(n+3) {
+        width: 125px;
+    }
+    /*
+    table.all td {
+        padding-left: 10px;
+        padding-right: 10px
+    }
+*/
+    /*----------------------------------------*/
+    
+    table.all tr {
+        height: 75px;
+    }
+    
+    table.all tr:nth-child(1) {
+        height: auto;
+    }
+    
+    table.all tr:nth-child(n) {
+        border-bottom: 1px solid black;
+    }
+        
+    table.all tr:nth-child(1),
+    table.all tr:last-child {
+        border-bottom: 2px solid black;
+    }
+    
+    table.all tr:hover {
+        background: #EDF5DC;
+    }   
+   
+    /*----------------------------------------*/
+    
+    table.all th:nth-child(n) {
+        background: #fffffa;
+        border-top: none;
+    }
+    
+    table.all td:nth-child(n+3) {
+        border-left: 1px solid lightgray;
+    }
+    
+    table.all td:nth-child(n) {
+        vertical-align: middle;
+    }
+    /*----------------------------------------*/
+</style>
+
+<body onload="navigationBar()">
+    <div id='navigationBar'></div>
+    <article class="container" style="margin-top:50px;">
+        <section>
+            <h1 id="tufte-css">Lab Mentors</h1>
+            <table class="table-hover all">
+                <tr>
+                    <th>Name &amp; E-mail</th>
+                    <th>Major</th>
+                    <th>Monday</th>
+                    <th>Tuesday</th>
+                    <th>Wednesday</th>
+                    <th>Thursday</th>
+                    <th>Friday</th>
+                    <th>Note</th>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/graduate-mentors/hjh.jpg'/>" href="mailto:junhao.hue12@sps.nus.edu.sg">Hue Jun Hao</a></td>
+                    <td>Physics</td>
+                    <td>After 18:00</td>
+                    <td>Before 12:00</td>
+                    <td>After 18:00</td>
+                    <td></td>
+                    <td>After 18:00</td>
+                    <td>Weekends!<br>(for now)</td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/cxj2.jpg'/>" href="mailto:xujun.cao14@sps.nus.edu.sg">Cao Xujun</a></td>
+                    <td>Chemistry</td>
+                    <td>8:00 to 10:00</td>
+                    <td></td>
+                    <td>After 12:00</td>
+                    <td>8:00 to 10:00</td>
+                    <td>After 12:00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/snvh.jpg'/>" href="mailto:shawn.ng14@sps.nus.edu.sg">Shawn Ng</a></td>
+                    <td>Chemistry</td>
+                    <td colspan="5">After 11:00</td>
+<!--
+                    <td>After 11:00</td>
+                    <td>After 11:00</td>
+                    <td>After 11:00</td>
+                    <td>After 11:00</td>
+                    --><td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/wzlj.jpg'/>" href="mailto:jireh.wong14@sps.nus.edu.sg">Wong Zhu Liang Jireh</a></td>
+                    <td>Chemistry</td>
+                    <td colspan="5">16:00 to 18:00</td>
+<!--
+                    <td>16:00 to 18:00</td>
+<td>16:00 to 18:00</td>
+<td>16:00 to 18:00</td>
+<td>16:00 to 18:00</td>
+-->
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/snvh.jpg'/>" href="mailto:kristy.chang14@sps.nus.edu.sg">Kristy Chang</a></td>
+                    <td>Biological Sciences</td>
+                    <td>Before 12:00</td>
+                    <td>Before 12:00</td>
+                    <td>After 12:00</td>
+                    <td>Before 12:00</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/jawl.jpg'/>" href="mailto:joyce.ang14@sps.nus.edu.sg">Ang Wee Lin Joyce</a></td>
+                    <td>Physics</td>
+                    <td>After 14:00</td>
+                    <td></td>
+                    <td>After 16:00</td>
+                    <td>12:00 to 16:00</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/student-mentors/lxf.jpg'/>" href="mailto:xiaofeng.lim14@sps.nus.edu.sg">Lim Xiao Feng</a></td>
+                    <td>Physics</td>
+                    <td></td>
+                    <td></td>
+                    <td>10:00 to 14:00</td>
+                    <td>10:00 to 14:00</td>
+                    <td>10:00 to 12:00</td>
+                    <td>Night time on weekdays</td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/junior-mentors/wmy.JPG'/>" href="mailto:mengyue.wu14@sps.nus.edu.sg">Wu Meng Yue</a></td>
+                    <td>Biological Sciences</td>
+                    <td></td>
+                    <td></td>
+                    <td>After 12:00</td>
+                    <td>After 14:00</td>
+                    <td>After 14:00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/junior-mentors/glkr.JPG'/>" href="mailto:garrick.lim15@sps.nus.edu.sg">Garrick Lim</a></td>
+                    <td>Chemistry</td>
+                    <td></td>
+                    <td>10:00 to 14:00</td>
+                    <td></td>
+                    <td>10:00 to 12:00</td>
+                    <td>10:00 to 14:00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td> <a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/junior-mentors/styj.JPG'/>" href="mailto:shaun.tan15@sps.nus.edu.sg">Shaun Tan</a> </td>
+                    <td>Chemistry</td>
+                    <td>After 16:00</td>
+                    <td>After 18:00</td>
+                    <td>After 16:00</td>
+                    <td>After 12:00</td>
+                    <td>After 18:00</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/junior-mentors/ohw.JPG'/>" href="mailto:hanwee.ong15@sps.nus.edu.sg">Ong Han Wee</a></td>
+                    <td>Chemistry</td>
+                    <td>8:00 to 16:00</td>
+                    <td></td>
+                    <td>10:00 to 12:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><a id="panelPrecios" data-toggle="tooltip" title="<img src='http://sps.nus.edu.sg/people/img/junior-mentors/gkmq.JPG'/>" href="mailto:gabriel.kam15@sps.nus.edu.sg">Kam Mao Quan, Gabriel</a></td>
+                    <td>Physics</td>
+                    <td></td>
+                    <td></td>
+                    <td>After 18:00</td>
+                    <td></td>
+                    <td>After 18:00</td>
+                    <td></td>
+                </tr>
+            </table>
+    </article>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+# <span style="color:darkred;">Question Box</span> {-}
+
+Hello! 
+
+Please use the space below to ask questions, offer suggestions and provide *any* feedback whatsoever. 
+
+Do note that this is an *annonymous* mode of feedback. However, do leave your e-mail if you want me to get back to you. 
+I will address your questions/suggestions in the lecture to follow. 
+
+Best, 
+
+Chammika Udalagama
+
+<!-- ```{r} -->
+<!-- knitr::include_url("https://docs.google.com/forms/d/e/1FAIpQLSf4ZeKHQ-_Mm9J070n6v3DnB2-pqke0esNDQUBcez9CDNkVeA/viewform?embedded=true",height = '510px') -->
+<!-- ``` -->
+
+
+```{r,results='asis'}
+cmd <- '<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4ZeKHQ-_Mm9J070n6v3DnB2-pqke0esNDQUBcez9CDNkVeA/viewform?embedded=true" width="800" height="700" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>'
+
+cat(cmd)
+```
+

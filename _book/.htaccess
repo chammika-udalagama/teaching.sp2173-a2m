@@ -1,0 +1,4 @@
+AuthUserFile /home/chammika/.htpasswd
+AuthType Basic
+AuthName "You need authorisation to proceed!"
+Require valid-user

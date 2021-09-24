@@ -1,0 +1,19 @@
+# Schedule {-}
+
+## General {-}
+
+ ```{r schedule-table, child='./children/a2m-schedule.Rmd', eval=TRUE}
+ 
+ ```
+```{r setup, include=FALSE, echo=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Interactive Sessions {-}
+
+All the sessions will be held in the SPS Seminar Room.
+
+```{r}
+htmltools::includeHTML('html-files/is.html')
+```
+

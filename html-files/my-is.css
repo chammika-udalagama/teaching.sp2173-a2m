@@ -1,0 +1,42 @@
+table.table-is {
+    border-collapse: collapse;
+    text-align: center;
+    table-layout: fixed;
+    margin-top: 25px;
+    width: 850px;
+    font-weight: bolder;
+}
+
+table.table-is thead th {
+    width: 50px;
+    border-bottom: none
+}
+
+table.table-is tr {
+    height: 50px;
+}
+
+table.table-is td {
+    border: 1pt solid lightgray;
+}
+
+table.table-is td:nth-of-type(1),
+table.table-is td:nth-of-type(7),
+table.table-is tr:nth-of-type(6) td {
+    border: none;
+}
+
+.a2m {
+    background: darkred;
+    color: white;
+}
+
+.sp {
+    background: darkgreen;
+    color: white;
+}
+
+.is {
+    background: #2E5894;
+    color: white;
+}

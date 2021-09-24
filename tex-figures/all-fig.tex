@@ -1,251 +1,13 @@
-c%\documentclass{standalone}
+%\documentclass{standalone}
 \documentclass{article}
 
 \input{preamble}
 
 \begin{document}
 
-%%------------------------------------------------------------------------
-%\subsection{Self energy: Table}	
-%%------------------------------------------------------------------------
-%%Table name: electric_self-energy
-%%Table-start
-%\[
-%\def\br{&\\[15pt]}
-%\begin{array}{L{0.2\lw}|C{0.1\lw}|C{0.2\lw}|C{0.4\lw}@{}m{0pt}@{}}
-%& $A $& $B $& $C$ \\
-%\toprule
-%&$0$ & $\underbrace{\kC {\dfrac{q}{AB}}}_\text{\color{black!60}Brining $B$ to $A$}$& $\underbrace{\kC {\dfrac{q}{AC}}}_\text{\color{black!70}Brining $C$ to $A$}+\underbrace{\kC {\dfrac{q}{BC}}}_\text{\color{black!70}Brining $C$ to $B$}$\br 
-%Work we need to bring:& & $=\kC{\dfrac{q}{a}}$ & $=\kC{\dfrac{q}{a}}+\kC{\dfrac{q}{a}}$\br
-%\bottomrule
-%\end{array}
-%\]
-%%Table-end
-
-
-
-
-
-
-
-%------------------------------------------------------------------------
-\subsection{Hydrogen atom states}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{5cm}
-	%File name: quantum-h-states
-	
-	\def\b{\color{blue!70!black}}
-	\def\g{\color{green!50!black}}
-	\def\r{\color{red!70!black}}
-	
-	\newcommand{\cc}[1]{
-		\left\{\begin{array}{rll|l}
-			#1
-		\end{array}\right. 
-	}
-	
-	\draw (0.5\lw,0.5*\h) node[text width=\linewidth]{\tiny
-		\[
-		\begin{array}{ccl}
-		n  \rightarrow & \cc{
-			\b l=0 &\rightarrow & \g m_l=\cc{0\\}&\r \#= 1\\\\
-			\b l=1&\rightarrow &  \g m_l=\cc{-1\\0\\1\\}&\r \#= 3\\\\
-			\b l=2&\rightarrow &  \g m_l=\cc{-2\\-1\\0\\1\\2\\}&\r \#= 5\\\\
-			\ldots\\
-			\b l=n-1&\rightarrow & \g m_l= \cc{-(n-1)\\-(n-2)\\\ldots\\0\\\ldots\\(n-2)\\(n-1)}&\r \#= 2l+1\\\\
-		}&
-		\end{array}
-		\]};
-\end{myTikz}
 
 
 \end{document}
-
-%------------------------------------------------------------------------
-%
-%
-%
-%------------------------------------------------------------------------
-
-\section{Quantum Mechanics}
-
-%------------------------------------------------------------------------
-\subsection{Particle in a 1D Ring}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{5cm}
-	%File name: quantum-pir
-	\def\r{0.35\lw}
-	%	\useasboundingbox (-0.5\linewidth,-1.175*\r) rectangle (0.5\linewidth,0.65*\r);
-	\draw[fill=white!70!gray] (0,0) circle (1.125*\r);
-	\draw[fill=white] (0,0) circle (0.98*\r) ;
-	\draw[->,red!70!black] (1.0625*\r,0) arc (0:180:1.0625*\r);
-	\draw (-.9*\r,0)node{$x$};
-	\draw (1.125*\r,0)node[right,text width = 5em]{$x = 0$\\ $x = L$};
-\end{myTikz}
-
-%------------------------------------------------------------------------%
-%
-%
-%
-%------------------------------------------------------------------------
-
-\section{Electrostatics}
-
-%------------------------------------------------------------------------
-\subsection{Self energy}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{5cm}
-	%File name: energyCurves-bond
-	\newcommand\temp[2]{
-		\begin{scope}[yshift=0.125*\h+#1,font=\small]
-			%\freedraw[dashed,thin] (0,0) -- +(0.75\lw,0);
-			\freedraw[decoration={aspect=0.5, segment length=2mm, amplitude=2mm,coil},decorate,thick] (0.05\lw,0)--(#2*\lw,0) ; 
-			\node[circle,fill=gray!20,inner sep=0.03\lw] (a) at (0,0) {$A$};
-			\node[circle,fill=gray!30,inner sep=0.0125\lw] (b) at (1.045*#2\lw,0) {$B$};
-		\end{scope}
-	}
-	
-	\draw[thin,loosely dashed] (0.64*\w,0)node[fill=white,above]{$r_{0}$} -- +(0,\h);
-	\draw[<->,thin,Maroon](0.475\lw,1.05*\h)--+(0.35\lw,0);
-	\temp{0.1*\h}{0.475}
-	\temp{0.45*\h}{0.625}
-	\temp{0.8*\h}{0.75}
-	
-\end{myTikz}
-
-
-\begin{myTikz}[]{5cm}
-	%File name: electric_self-energy
-%\useasboundingbox (0,0) rectangle (\lw,2cm);
-% Draw thin grid lines with color 40% gray + 60% white
-\begin{scope}[xshift=0.75cm,yshift=0.5cm]
-\draw [step=0.25,thin,gray!40] (-0.25,-0.25) grid (1.25,1.25);
-\draw [->] (0,0) -- (1.5,0) node [below] {$x$};
-\draw [->] (0,0) -- (0,1.5) node [left] {$y$};
-\draw[ultra thick,brown] (0,0)--(1,0)--(0.5,0.8)--cycle;
-\draw[fill=red] (0,0)node[below=0.125cm]{A}circle(0.05)(1,0)node[below=0.125cm]{B}circle(0.05)(0.5,0.8)node[above=0.125cm]{C}circle(0.05);
-\end{scope}
-\end{myTikz}
-
-%------------------------------------------------------------------------
-\subsection{A deep connection}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{1}
-	%File name: electric_deep-connection
-	\def\w{0.8*\lw}
-	\def\a{(0.6*\w,0)}
-	\def\b{(0.85*\w,0)}
-	\draw[dashed](0,0)-- +(\w,0);
-	\draw[dashed](0.6*\w,0)-- +(0,-1);
-	\draw[dashed](0.85*\w,0)-- +(0,-1);
-	
-	%
-	\freedraw[->,very thick](0,-0.75)-- +\a; 
-	\draw (0.5*0.6*\w,-0.75)node[fill=white]{$r$};
-	%
-	\freedraw[->,very thick](0.6*\w,-0.75) -- +(0.25*\w,0); 
-	\draw (0.6*\w,-0.75)+(0.5*0.25*\w,0)node[fill=white]{$\delta r$};
-	
-	%
-	\freedraw[fill=gray!10,draw=black] (0,0)circle(0.5)node{$+Q$} ;
-	\draw[fill=black,draw=none] \a circle(0.05)node[below left]{$P$}node[above=0.5cm]{$V$}node[above]{$q$};
-	\draw[fill=blue,draw=none] \b circle(0.05)node[below left]{$P'$}node[above=0.5cm]{$V+\delta V$}node[above]{$q$};
-	\draw[ultra thick,->,draw=red!50!black, color=Maroon]\a-- +(1,0)node[below]{${F}_{\text{\tiny electrostatic}}$};
-	\draw[ultra thick,->,draw=red!50!black, color=Maroon]\b-- +(1,0)node[below]{${F}_{\text{\tiny electrostatic}}$};
-\end{myTikz}
-
-%------------------------------------------------------------------------
-\subsection{Field imbues}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{1}
-	%File name: electric_field-imbues
-	\def\delx{0.2\lw} 
-	\def\r{0.25mm}
-	\freedraw[dashed,thin] (0,0.5*\h) -- +(\lw,0);
-	\draw[below, font=\scriptsize] (0,0.5*\h) ++(\delx,0)node{$A$} ++(\delx,0)node{$B$} ++(\delx,0)node{$C$}++(\delx,0)node{$D$};
-	\draw[fill=green!50!black] (0,0.5*\h) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r) ++(\delx,0)circle(\r);
-	\freedraw (0,0.5*\h)node[draw=black, fill=gray!10,thick,shape=circle]{\scriptsize $+Q$};
-\end{myTikz}
-
-%------------------------------------------------------------------------
-\subsection{Potential due to a point charge}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{1}
-	%File name: electric_point-charge
-	\draw[dashed](0,0)-- +(4.75,0);
-	
-	\freedraw[->,very thick](0,-0.75)-- +(4,0); 
-	\draw (2.0,-0.75)node[fill=white]{$r$};
-	%
-	\freedraw[fill=gray!10,draw=black] (0,0)circle(0.5)node{$+Q$} ;
-	\draw[fill=black,draw=none] (4,0)circle(0.05)node[below right]{$P$}node[above]{$q$};
-	%
-\end{myTikz}
-
-%------------------------------------------------------------------------
-\subsection{Why potential}	
-%-----------------------------------------------------------------------
-
-\begin{myTikz}[]{1}
-	%File name: electric_why-potential
-	\def\w{1.1\lw}
-	\def\a{(0.4*\w,0)}
-	\def\b{(0.85*\w,0)}
-	\draw[dashed](0,0)-- +(\w,0);
-	%\draw[dashed](4,0)-- +(0,-1);
-	%\draw[dashed](0,0)-- +(0,-1.5);
-	%\draw[dashed](7.5,0)-- +(0,-1.5);
-	%
-	\freedraw[->,very thick](0,-0.75)-- +\a; 
-	\draw (0.5*0.4*\w,-0.75)node[fill=white]{$r$};
-	%
-	\freedraw[->,very thick](0,-1.25)-- +\b; 
-	\draw (0.5*0.85*\w,-1.25)node[fill=white]{$2r$};
-	%
-	\freedraw[fill=gray!10,draw=black] (0,0)circle(0.5)node{$+Q$} ;
-	\draw[fill=black,draw=none] \a circle(0.05)node[below right]{$V_1$} node[above]{$q$};
-	\draw[fill=blue,draw=none] \b circle(0.05)node[below right]{$V_2$} node[above]{$2q$};
-\end{myTikz}
-
-
-
-
-%------------------------------------------------------------------------
-\subsection{Work done in a field}	
-%------------------------------------------------------------------------
-
-\begin{myTikz}[]{1}
-	%File name: electric_workdone
-	\draw[dashed](0,0)-- +(10,0);
-	\draw[dashed](4,0)-- +(0,-1);
-	\draw[dashed](0,0)-- +(0,-1.5);
-	\draw[dashed](7.5,0)-- +(0,-1.5);
-	\draw[dashed](7.,0)-- +(0,-1.5);
-	%
-	\draw(7.25,-0.5) node[below,fill=white]{$-\delta r$} ;
-	\draw[<-,very thick](7,-0.5)-- +(0.5,0);
-	%
-	\draw[->,very thick](0,-0.75)-- +(4,0); 
-	\draw (2.0,-0.75)node[fill=white]{$R$};
-	%
-	\draw[->,very thick](0,-1.25)-- +(7.5,0); 
-	\draw (3.75,-1.25)node[fill=white]{$r$};
-	%
-	\draw[fill=gray!10,draw=black] (0,0)circle(0.5)node{$+Q$} ;
-	\draw[fill=black,draw=none] (4,0)circle(0.05)node[above]{$P$} ;
-	%
-	\draw[ultra thick,->,draw=red!50!black, color=red](7.5,0)-- +(1,0)node[above right]{${F}_{\text{electrostatic}}$};
-	%
-	\draw[ultra thick,->,draw=green!50!black, color=green!50!black](7.5,0)-- +(-1,0)node[above left]{${F}_{\text{you}}$};
-	
-	\draw[fill=blue,draw=none] (7.5,0)circle(0.05)node[above]{$q$} ;
-\end{myTikz}
 
 %------------------------------------------------------------------------
 %
@@ -274,8 +36,8 @@ c%\documentclass{standalone}
 %------------------------------------------------------------------------
 \begin{myTikz}[]{4.25}
 	%File name: vector_simple-addition
-	\freedraw[->,black!60, thin] (0,0) -- +(30:2)node[below right]{$\vec{F_1}$};
-	\freedraw[->, black!70,thick] (0,0) ++(30:2.0125) -- +(110:3)node[right=0.125]{$\vec{F_2}$};
+	\freedraw[->,black!60, thin] (0,0) -- +(30:2)node[below right]{$\vec{V_1}$};
+	\freedraw[->, black!70,thick] (0,0) ++(30:2.0125) -- +(110:3)node[right=0.125]{$\vec{V_2}$};
 	\freedraw[->, red!50!black] (0,0) -- +(80.5:3.8)node[below, left=0.125]{$\vec{R}$};
 \end{myTikz}
 
@@ -328,27 +90,7 @@ c%\documentclass{standalone}
 		\freedraw[thin,gray!50] (0,0)++(\aa:0.2*\w)--+(\aa:-0.24*\w);
 		\freedraw[gray] (180-0.25*\aa:1.25*\r) node{$\beta$};
 		\freedraw[thin,->,gray] (-\r,0) arc(180:\aa:\r);
-		\freedraw[->,black!60,thin] (0,0) -- +(\aa:{\h*cos(\ang-\aa)})node[above left]{$-F\cos (\theta + \beta)$};
+		\freedraw[->,black!60,thin] (0,0) -- +(\aa:{\h*cos(\ang-\aa)})node[above left]{$F\cos (\theta + \beta)$};
 		\freedraw[->,black!70,thick] (0,0) -- ++(\aa:{\h*cos(\ang-\aa)}) -- +(92+\aa:{\h*sin(\ang-\aa)})node[left=0.035*\w]{$F\sin (\theta + \beta)$};
 	\end{scope}
 \end{myTikz}
-
-%------------------------------------------------------------------------
-\subsection{Perpendicular Components}	
-%------------------------------------------------------------------------
-\begin{myTikz}[]{1}
-	%File name: vector_perpendicular
-	\def\ang{60}
-	\def\len{.5\w}
-	\freedraw[->,ultra thick, Maroon] (0,0) -- +(\ang:\len);
-	\freedraw[->,thick] (0,0) -- +(0:{1.025*cos(\ang)*\len});
-	\freedraw[->,thick] (0,0) ++(0:{1.025*cos(\ang)*\len}) -- +(90:{sin(\ang)*\len});
-	\freedraw ({\ang*1/2}:.125*\len) node{$\theta$};
-	\freedraw[thick, gray,->] (0:{.25*\len}) arc (0:\ang:{.25*\len});
-	% Draw the labels
-	\draw (0,0)+(\ang:.5*\len)node[left=.25cm]{$\vec{R}$};
-	\draw (0,0)+(0:{.5*cos(\ang)*\len})node[below=.25cm]{$\vec{X}$};
-	\draw (0,0)++(0:{cos(\ang)*\len})+(90:{.5*sin(\ang)*\len})node[right=.25cm]{$\vec{Y}$};
-\end{myTikz}
-
-

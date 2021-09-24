@@ -1,13 +1,3 @@
-# SP2173 (A2M) | Flippeed Mastery Version
+This is a minimal example of a book based on R Markdown and **bookdown** (https://github.com/rstudio/bookdown). Please see the page "[Get Started](https://bookdown.org/yihui/bookdown/get-started.html)" at https://bookdown.org/yihui/bookdown/ for how to compile this example into HTML. You may generate a copy of the book in `bookdown::pdf_book` format by calling `bookdown::render_book('index.Rmd', 'bookdown::pdf_book')`. More detailed instructions are available here https://bookdown.org/yihui/bookdown/build-the-book.html.
 
-## Notes
-
-- This version of the module was run in August 2020. This was also the last iteration of the module due to the changes brought about by CHS.
-- This is based on the msmbstyle ([GitHub](https://github.com/grimbough/msmbstyle/))
-
-## How to install the msmbstyle
-
-```
-install.packages("remotes")
-remotes::install_github("grimbough/msmbstyle")
-```
+You can find the preview of this example at https://bookdown.org/yihui/bookdown-demo/.
